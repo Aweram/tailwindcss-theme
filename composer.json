@@ -3,7 +3,7 @@
     "description": "Set of laravel components",
     "type": "library",
     "require": {
-        "laravel/framework": "^10.*"
+        "laravel/framework": "^10.10"
     },
     "license": "MIT",
     "autoload": {
