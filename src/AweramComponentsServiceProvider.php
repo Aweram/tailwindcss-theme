@@ -35,10 +35,14 @@ class AweramComponentsServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             // Публикация layouts конмонентов.
             $this->publishes([
-                __DIR__ . "/../stubs/AdminLayout.php" => app_path("View/Components/AdminLayout.php"),
-                __DIR__ . "/../stubs/AppLayout.php" => app_path("View/Components/AppLayout.php"),
-                __DIR__ . "/../stubs/AuthLayout.php" => app_path("View/Components/AuthLayout.php"),
-            ], "wrmc-layouts");
+                __DIR__ . "/../stubs/layout/AdminLayout.php" => app_path("View/Components/AdminLayout.php"),
+                __DIR__ . "/../stubs/layout/AppLayout.php" => app_path("View/Components/AppLayout.php"),
+                __DIR__ . "/../stubs/layout/AuthLayout.php" => app_path("View/Components/AuthLayout.php"),
+            ], "layout-components");
+
+            $this->publishes([
+                __DIR__ . "/resources/views/layouts" => resource_path("views/vendor/wrmc/layouts")
+            ], "layout-views");
         }
     }
 }
