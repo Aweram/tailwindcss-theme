@@ -1,0 +1,28 @@
+{
+    "name": "portedcheese/aweram-components",
+    "description": "Set of laravel components",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^10.*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Portedcheese\\AweramComponents\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladimir Peshkov",
+            "email": "vladimirpeshkov5@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Portedcheese\\AweramComponents\\AweramComponentsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
