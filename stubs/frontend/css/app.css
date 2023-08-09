@@ -1,19 +1,4 @@
+@import "./app/_variables.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-    :root {
-        /* Colors */
-        --color-light: 248, 249, 250; /* #F8F9FA */
-        --color-dark: 33, 37, 41; /* #212529 */
-        --color-success: 25, 135, 84; /* #198754 */
-        --color-danger: 220, 53, 69; /* #dc3545 */
-        --color-warning: 255, 193, 7; /* #ffc107 */
-        --color-info: 13, 202, 240; /* #0dcaf0 */
-        --color-primary: 13, 110, 253; /* #0d6efd */
-        --color-secondary: 108, 117, 125; /* #6c757d */
-
-        --color-body: 33, 37, 41; /* #212529 */
-    }
-}

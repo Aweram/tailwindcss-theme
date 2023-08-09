@@ -1,0 +1,21 @@
+:root {
+    /* Colors */
+    --color-light: 245, 245, 245; /* #F5F5F5 */
+    --color-dark: 94, 88, 115; /* #5E5873 */
+    --color-success: 40, 169, 146; /* #28A992 */
+    --color-danger: 224, 31, 39; /* #E01F27 */
+    --color-warning: 247, 150, 30; /* #F7961E */
+    --color-info: 128, 159, 255; /* #809FFF */
+    --color-primary: 0, 31, 125; /* #001F7D */
+    --color-secondary: 187, 184, 199; /* #BBB8C7 */
+
+    --color-body: var(--color-dark);
+
+    /* Sizes */
+    --btn-height: 2.5rem;
+    --btn-padding-x: 1.5rem;
+    --btn-font-size: .875rem;
+    --btn-line-height: 1.25rem;
+    --btn-border-width: 1px;
+    --btn-border-radius: .625rem;
+}

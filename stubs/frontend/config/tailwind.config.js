@@ -55,6 +55,21 @@ export default {
             fontFamily: {
                 'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
             },
+            fontSize: {
+                btn: ['var(--btn-font-size)', 'var(--btn-line-height)'],
+            },
+            spacing: {
+                "btn-x": 'var(--btn-padding-x)',
+            },
+            height: {
+                "btn": 'var(--btn-height)',
+            },
+            borderWidth: {
+                "btn": 'var(--btn-border-width)',
+            },
+            borderRadius: {
+                "btn": 'var(--btn-border-radius)',
+            },
         },
     },
     plugins: [],
