@@ -1,4 +1,6 @@
 @import "./app/_variables.css";
+
+@config "../../tailwind.config.js";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
