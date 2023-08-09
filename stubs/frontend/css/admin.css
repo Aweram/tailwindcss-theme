@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        /* Colors */
+        --color-light: 245, 245, 245; /* #F5F5F5 */
+        --color-dark: 94, 88, 115; /* #5E5873 */
+        --color-success: 40, 169, 146; /* #28A992 */
+        --color-danger: 224, 31, 39; /* #E01F27 */
+        --color-warning: 247, 150, 30; /* #F7961E */
+        --color-info: 128, 159, 255; /* #809FFF */
+        --color-primary: 0, 31, 125; /* #001F7D */
+        --color-secondary: 187, 184, 199; /* #BBB8C7 */
+
+        --color-body: var(--color-dark);
+    }
+}

@@ -1,11 +1,10 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite --config vite.config.js && vite --config admin.vite.config.js",
-        "build": "vite build --config vite.config.js && vite build --config admin.vite.config.js",
+        "build": "vite build --config vite.config.js && vite build --config vite.admin.config.js",
         "dev:app": "vite --config vite.config.js",
         "build:app": "vite build --config vite.config.js",
-        "dev:admin": "vite --config admin.vite.config.js",
+        "dev:admin": "vite --config vite.admin.config.js",
         "build:admin": "vite build --config admin.vite.config.js"
     },
     "devDependencies": {

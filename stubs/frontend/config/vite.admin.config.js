@@ -18,7 +18,7 @@ export default defineConfig({
             plugins: [
                 require("tailwindcss/nesting"),
                 require("tailwindcss")({
-                    config: "./admin-tailwind.config.js",
+                    config: "./tailwind.admin.config.js",
                 }),
                 require("autoprefixer"),
             ]
