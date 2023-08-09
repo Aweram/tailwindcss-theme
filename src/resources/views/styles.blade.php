@@ -12,32 +12,38 @@
         </div>
 
         <div class="flex justify-between flex-wrap bg-white rounded p-2">
-            <x-wrmc::btn light class="m-2">Light button</x-wrmc::btn>
-            <x-wrmc::btn dark class="m-2">Dark button</x-wrmc::btn>
-            <x-wrmc::btn success class="m-2">Success button</x-wrmc::btn>
-            <x-wrmc::btn danger class="m-2">Danger button</x-wrmc::btn>
-            <x-wrmc::btn warning class="m-2">Warning button</x-wrmc::btn>
-            <x-wrmc::btn info class="m-2">Info button</x-wrmc::btn>
-            <x-wrmc::btn primary class="m-2">Primary button</x-wrmc::btn>
-            <x-wrmc::btn secondary class="m-2">Secondary button</x-wrmc::btn>
+            <x-wrmc::btn light class="m-2">Light btn</x-wrmc::btn>
+            <x-wrmc::btn dark class="m-2">Dark btn</x-wrmc::btn>
+            <x-wrmc::btn success class="m-2">Success btn</x-wrmc::btn>
+            <x-wrmc::btn danger class="m-2">Danger btn</x-wrmc::btn>
+            <x-wrmc::btn warning class="m-2">Warning btn</x-wrmc::btn>
+            <x-wrmc::btn info class="m-2">Info btn</x-wrmc::btn>
+            <x-wrmc::btn primary class="m-2">Primary btn</x-wrmc::btn>
+            <x-wrmc::btn secondary class="m-2">Secondary btn</x-wrmc::btn>
         </div>
         <div class="flex justify-between flex-wrap bg-white rounded p-2">
-            <x-wrmc::btn outlineLight class="m-2">Light button</x-wrmc::btn>
-            <x-wrmc::btn outlineDark class="m-2">Dark button</x-wrmc::btn>
-            <x-wrmc::btn outlineSuccess class="m-2">Success button</x-wrmc::btn>
-            <x-wrmc::btn outlineDanger class="m-2">Danger button</x-wrmc::btn>
-            <x-wrmc::btn outlineWarning class="m-2">Warning button</x-wrmc::btn>
-            <x-wrmc::btn outlineInfo class="m-2">Info button</x-wrmc::btn>
-            <x-wrmc::btn outlinePrimary class="m-2">Primary button</x-wrmc::btn>
-            <x-wrmc::btn outlineSecondary class="m-2">Secondary button</x-wrmc::btn>
+            <x-wrmc::btn outlineLight class="m-2">Light btn</x-wrmc::btn>
+            <x-wrmc::btn outlineDark class="m-2">Dark btn</x-wrmc::btn>
+            <x-wrmc::btn outlineSuccess class="m-2">Success btn</x-wrmc::btn>
+            <x-wrmc::btn outlineDanger class="m-2">Danger btn</x-wrmc::btn>
+            <x-wrmc::btn outlineWarning class="m-2">Warning btn</x-wrmc::btn>
+            <x-wrmc::btn outlineInfo class="m-2">Info btn</x-wrmc::btn>
+            <x-wrmc::btn outlinePrimary class="m-2">Primary btn</x-wrmc::btn>
+            <x-wrmc::btn outlineSecondary class="m-2">Secondary btn</x-wrmc::btn>
         </div>
 
         <div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
-            <x-wrmc::btn isLink primary href="#" target="_blank" class="m-2">Link button</x-wrmc::btn>
-            <x-wrmc::btn primary :disabledCondition="true" class="m-2">Disabled button</x-wrmc::btn>
-            <x-wrmc::btn primary class="m-2">Default round button</x-wrmc::btn>
-            <x-wrmc::btn primary roundedNone class="m-2">No rounded button</x-wrmc::btn>
-            <x-wrmc::btn primary roundedNone class="m-2 rounded">Custom rounded button</x-wrmc::btn>
+            <x-wrmc::btn isLink primary href="#" target="_blank" class="m-2">Link btn</x-wrmc::btn>
+            <x-wrmc::btn primary :disabledCondition="true" class="m-2">Disabled btn</x-wrmc::btn>
+            <x-wrmc::btn primary class="m-2">Default round btn</x-wrmc::btn>
+            <x-wrmc::btn primary roundedNone class="m-2">No rounded btn</x-wrmc::btn>
+            <x-wrmc::btn primary roundedNone class="m-2 rounded">Custom rounded btn</x-wrmc::btn>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
+            <x-wrmc::btn primary sm class="m-2">Small btn</x-wrmc::btn>
+            <x-wrmc::btn primary class="m-2">Default btn</x-wrmc::btn>
+            <x-wrmc::btn primary lg class="m-2">Large btn</x-wrmc::btn>
         </div>
     </div>
 </div>

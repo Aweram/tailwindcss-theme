@@ -57,12 +57,18 @@ export default {
             },
             fontSize: {
                 btn: ['var(--btn-font-size)', 'var(--btn-line-height)'],
+                'btn-sm': ['var(--btn-font-size-sm)', 'var(--btn-line-height-sm)'],
+                'btn-lg': ['var(--btn-font-size-lg)', 'var(--btn-line-height-lg)'],
             },
             spacing: {
                 "btn-x": 'var(--btn-padding-x)',
+                "btn-x-sm": 'var(--btn-padding-x-sm)',
+                "btn-x-lg": 'var(--btn-padding-x-lg)',
             },
             height: {
                 "btn": 'var(--btn-height)',
+                "btn-sm": 'var(--btn-height-sm)',
+                "btn-lg": 'var(--btn-height-lg)',
             },
             borderWidth: {
                 "btn": 'var(--btn-border-width)',
