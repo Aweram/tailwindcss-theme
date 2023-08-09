@@ -53,7 +53,7 @@ export default {
 
         extend: {
             fontFamily: {
-                'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
+                'sans': ['Nunito', ...defaultTheme.fontFamily.sans],
             },
             fontSize: {
                 btn: ['var(--btn-font-size)', 'var(--btn-line-height)'],
