@@ -1,17 +1,26 @@
 const plugin = require("tailwindcss/plugin")
 
-const makeColors = (key, value, textColor) => {
+const makeColors = (key, colorObject, textColor) => {
+    let value = colorObject['DEFAULT']
     let color = value.replace('<alpha-value>', 1)
-    let lightColor = value.replace('<alpha-value>', .75)
     let outlineColor = value.replace('<alpha-value>', .1)
+    let hoverColor = value.replace('<alpha-value>', .75);
+
+    if (colorObject.hasOwnProperty("hover"))
+        hoverColor = colorObject['hover'].replace('<alpha-value>', 1)
+    else if (colorObject.hasOwnProperty("darken"))
+        hoverColor = colorObject['darken'].replace('<alpha-value>', 1)
+    else if (colorObject.hasOwnProperty("lighten"))
+        hoverColor = colorObject['lighten'].replace('<alpha-value>', 1)
+
     return {
         [`.btn-${key}`]: {
             backgroundColor: color,
             borderColor: color,
             color: textColor,
             "&:hover": {
-                backgroundColor: lightColor,
-                borderColor: lightColor
+                backgroundColor: hoverColor,
+                borderColor: hoverColor
             }
         },
         [`.btn-outline-${key}`]: {
@@ -26,16 +35,20 @@ const makeColors = (key, value, textColor) => {
 }
 const addColors = (colors, themeColors) => Object.keys(themeColors).reduce((acc, key) => {
     let textColor = themeColors[key] === 'light' ?
-            colors['white'].replace('<alpha-value>', 1) :
-            colors['body'].replace('<alpha-value>', 1)
-    if (typeof colors[key] === 'string') {
-        let value = colors[key]
+        colors['white'].replace('<alpha-value>', 1) :
+        colors['body'].replace('<alpha-value>', 1)
+    let value = colors[key]
+    if (typeof value === 'string') {
         return {
             ...acc,
-            ...makeColors(key, value, textColor)
+            ...makeColors(key, {DEFAULT: value}, textColor)
         }
     }
-    return {}
+
+    return {
+        ...acc,
+        ...makeColors(key, value, textColor)
+    }
 }, {})
 
 module.exports = plugin.withOptions(function (options = {}) {

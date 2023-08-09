@@ -1,13 +1,42 @@
 :root {
     /* Colors */
     --color-light: 245, 245, 245; /* #F5F5F5 */
+    --color-light-darken: 228, 228, 228; /* #E4E4E4 */
+    --color-light-hover: 228, 228, 228; /* #E4E4E4 */
+
     --color-dark: 94, 88, 115; /* #5E5873 */
+    --color-dark-darken: 68, 61, 89; /* #443D59 */
+    --color-dark-lighten: 130, 123, 156; /* #827B9C */
+    --color-dark-hover: 68, 61, 89; /* #443D59 */
+
     --color-success: 40, 169, 146; /* #28A992 */
+    --color-success-darken: 33, 142, 123; /* #218E7B */
+    --color-success-lighten: 29, 203, 172; /* #1DCBAC */
+    --color-success-hover: 33, 142, 123; /* #218E7B */
+
     --color-danger: 224, 31, 39; /* #E01F27 */
+    --color-danger-darken: 199, 18, 26; /* #C7121A */
+    --color-danger-lighten: 255, 108, 114; /* #FF6C72 */
+    --color-danger-hover: 199, 18, 26; /* #C7121A */
+
     --color-warning: 247, 150, 30; /* #F7961E */
+    --color-warning-darken: 217, 126, 14; /* #D97E0E */
+    --color-warning-lighten: 249, 180, 95; /* #F9B45F */
+    --color-warning-hover: 217, 126, 14; /* #D97E0E */
+
     --color-info: 128, 159, 255; /* #809FFF */
+    --color-info-darken: 80, 123, 255; /* #507BFF */
+    --color-info-lighten: 170, 191, 255; /* #AABFFF */
+    --color-info-hover: 80, 123, 255; /* #507BFF */
+
     --color-primary: 0, 31, 125; /* #001F7D */
+    --color-primary-darken: 0, 23, 91; /* #00175B */
+    --color-primary-lighten: 49, 79, 169; /* #314FA9 */
+    --color-primary-hover: 0, 23, 91; /* #00175B */
+
     --color-secondary: 187, 184, 199; /* #BBB8C7 */
+    --color-secondary-darken: 139, 137, 148; /* #8B8994 */
+    --color-secondary-hover: 139, 137, 148; /* #8B8994 */
 
     --color-body: var(--color-dark);
 

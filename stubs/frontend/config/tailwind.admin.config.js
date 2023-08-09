@@ -41,14 +41,52 @@ export default {
 
             body: 'rgba(var(--color-body), <alpha-value>)',
             // theme colors
-            light: 'rgba(var(--color-light), <alpha-value>)',
-            dark: 'rgba(var(--color-dark), <alpha-value>)',
-            success: 'rgba(var(--color-success), <alpha-value>)',
-            danger: 'rgba(var(--color-danger), <alpha-value>)',
-            warning: 'rgba(var(--color-warning), <alpha-value>)',
-            info: 'rgba(var(--color-info), <alpha-value>)',
-            primary: 'rgba(var(--color-primary), <alpha-value>)',
-            secondary: 'rgba(var(--color-secondary), <alpha-value>)',
+            light: {
+                DEFAULT: 'rgba(var(--color-light), <alpha-value>)',
+                darken: 'rgba(var(--color-light-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-light-hover), <alpha-value>)',
+            },
+            dark: {
+                DEFAULT: 'rgba(var(--color-dark), <alpha-value>)',
+                lighten: 'rgba(var(--color-dark-lighten), <alpha-value>)',
+                darken: 'rgba(var(--color-dark-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-dark-hover), <alpha-value>)',
+            },
+            success: {
+                DEFAULT: 'rgba(var(--color-success), <alpha-value>)',
+                lighten: 'rgba(var(--color-success-lighten), <alpha-value>)',
+                darken: 'rgba(var(--color-success-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-success-hover), <alpha-value>)',
+            },
+            danger: {
+                DEFAULT: 'rgba(var(--color-danger), <alpha-value>)',
+                lighten: 'rgba(var(--color-danger-lighten), <alpha-value>)',
+                darken: 'rgba(var(--color-danger-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-danger-hover), <alpha-value>)',
+            },
+            warning: {
+                DEFAULT: 'rgba(var(--color-warning), <alpha-value>)',
+                lighten: 'rgba(var(--color-warning-lighten), <alpha-value>)',
+                darken: 'rgba(var(--color-warning-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-warning-hover), <alpha-value>)',
+            },
+            info: {
+                DEFAULT: 'rgba(var(--color-info), <alpha-value>)',
+                lighten: 'rgba(var(--color-info-lighten), <alpha-value>)',
+                darken: 'rgba(var(--color-info-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-info-hover), <alpha-value>)',
+            },
+            primary: {
+                DEFAULT: 'rgba(var(--color-primary), <alpha-value>)',
+                lighten: 'rgba(var(--color-primary-lighten), <alpha-value>)',
+                darken: 'rgba(var(--color-primary-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-primary-hover), <alpha-value>)',
+            },
+            secondary: {
+                DEFAULT: 'rgba(var(--color-secondary), <alpha-value>)',
+                darken: 'rgba(var(--color-secondary-darken), <alpha-value>)',
+                hover: 'rgba(var(--color-secondary-hover), <alpha-value>)',
+            },
         },
 
         themeColors: {
