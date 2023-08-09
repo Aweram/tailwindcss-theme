@@ -14,6 +14,6 @@
         --color-primary: 13, 110, 253; /* #0d6efd */
         --color-secondary: 108, 117, 125; /* #6c757d */
 
-        --color-body: var(--color-dark);
+        --color-body: 33, 37, 41; /* #212529 */
     }
 }
