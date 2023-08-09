@@ -30,4 +30,6 @@
 
     --btn-border-width: 1px;
     --btn-border-radius: .625rem; /* 10px */
+
+    --btn-ico-text-space: .625rem; /* 10px */
 }

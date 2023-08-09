@@ -64,8 +64,14 @@ export default {
                 "btn-x": 'var(--btn-padding-x)',
                 "btn-x-sm": 'var(--btn-padding-x-sm)',
                 "btn-x-lg": 'var(--btn-padding-x-lg)',
+                "btn-ico-text": 'var(--btn-ico-text-space)',
             },
             height: {
+                "btn": 'var(--btn-height)',
+                "btn-sm": 'var(--btn-height-sm)',
+                "btn-lg": 'var(--btn-height-lg)',
+            },
+            minWidth: {
                 "btn": 'var(--btn-height)',
                 "btn-sm": 'var(--btn-height-sm)',
                 "btn-lg": 'var(--btn-height-lg)',
