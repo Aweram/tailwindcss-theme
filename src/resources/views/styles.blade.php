@@ -45,5 +45,47 @@
             <x-wrmc::btn primary class="m-2">Default btn</x-wrmc::btn>
             <x-wrmc::btn primary lg class="m-2">Large btn</x-wrmc::btn>
         </div>
+
+        <div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
+            <x-wrmc::btn primary sm class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus width="15" height="auto" /></x-slot>
+                Ico small
+            </x-wrmc::btn>
+            <x-wrmc::btn primary class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus /></x-slot>
+                Ico normal
+            </x-wrmc::btn>
+            <x-wrmc::btn primary lg class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus width="23" height="auto" /></x-slot>
+                Ico big
+            </x-wrmc::btn>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
+            <x-wrmc::btn primary icoText="lg" sm class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus width="15" height="auto" /></x-slot>
+                Hidden text on lg
+            </x-wrmc::btn>
+            <x-wrmc::btn primary icoText="lg" class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus /></x-slot>
+                Hidden text on lg
+            </x-wrmc::btn>
+            <x-wrmc::btn primary icoText="lg" lg class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus width="23" height="auto" /></x-slot>
+                Hidden text on lg
+            </x-wrmc::btn>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
+            <x-wrmc::btn primary singleIco sm class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus width="15" height="auto" /></x-slot>
+            </x-wrmc::btn>
+            <x-wrmc::btn primary singleIco class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus /></x-slot>
+            </x-wrmc::btn>
+            <x-wrmc::btn primary singleIco lg class="m-2">
+                <x-slot name="ico"><x-wrmc::ico.circle-plus width="23" height="auto" /></x-slot>
+            </x-wrmc::btn>
+        </div>
     </div>
 </div>
