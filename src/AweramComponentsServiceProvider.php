@@ -56,6 +56,7 @@ class AweramComponentsServiceProvider extends ServiceProvider
                 __DIR__ . "/../stubs/frontend/config" => base_path(),
                 __DIR__ . "/../stubs/frontend/css" => resource_path("css"),
                 __DIR__ . "/../stubs/frontend/js" => resource_path("js"),
+                __DIR__ . "/../stubs/frontend/tailwind-plugins" => resource_path("tailwind-plugins"),
             ], "frontend");
         }
     }

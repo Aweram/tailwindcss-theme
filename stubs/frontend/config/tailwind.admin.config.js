@@ -51,6 +51,17 @@ export default {
             secondary: 'rgba(var(--color-secondary), <alpha-value>)',
         },
 
+        themeColors: {
+            light: 'dark',
+            dark: 'light',
+            success: 'light',
+            danger: 'light',
+            warning: 'dark',
+            info: 'dark',
+            primary: 'light',
+            secondary: 'light'
+        },
+
         extend: {
             fontFamily: {
                 'sans': ['Montserrat', ...defaultTheme.fontFamily.sans],
@@ -65,6 +76,7 @@ export default {
                 "btn-x-sm": 'var(--btn-padding-x-sm)',
                 "btn-x-lg": 'var(--btn-padding-x-lg)',
                 "btn-ico-text": 'var(--btn-ico-text-space)',
+                "btn-x-ico": 'var(--btn-padding-x-ico)'
             },
             height: {
                 "btn": 'var(--btn-height)',
@@ -84,6 +96,8 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require("./resources/tailwind-plugins/btnStyle"),
+    ],
 }
 

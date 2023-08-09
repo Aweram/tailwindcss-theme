@@ -51,6 +51,17 @@ export default {
             secondary: 'rgba(var(--color-secondary), <alpha-value>)',
         },
 
+        themeColors: {
+            light: 'dark',
+            dark: 'light',
+            success: 'light',
+            danger: 'light',
+            warning: 'dark',
+            info: 'dark',
+            primary: 'light',
+            secondary: 'light'
+        },
+
         extend: {
             fontFamily: {
                 'sans': ['Nunito', ...defaultTheme.fontFamily.sans],
@@ -84,6 +95,8 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require("./resources/tailwind-plugins/btnStyle"),
+    ],
 }
 
