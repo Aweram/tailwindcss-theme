@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite --config vite.config.js && vite --config admin.vite.config.js",
+        "build": "vite build --config vite.config.js && vite build --config admin.vite.config.js",
+        "dev:app": "vite --config vite.config.js",
+        "build:app": "vite build --config vite.config.js",
+        "dev:admin": "vite --config admin.vite.config.js",
+        "build:admin": "vite build --config admin.vite.config.js"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.14",
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.5",
+        "postcss": "^8.4.27",
+        "tailwindcss": "^3.3.3",
+        "vite": "^4.0.0"
+    }
+}

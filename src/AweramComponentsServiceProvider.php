@@ -6,7 +6,10 @@ use Illuminate\Support\ServiceProvider;
 
 class AweramComponentsServiceProvider extends ServiceProvider
 {
-    public function boot()
+    /**
+     * @return void
+     */
+    public function boot(): void
     {
         $this->configurePublishing();
 
@@ -14,7 +17,10 @@ class AweramComponentsServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . "/resources/views", "wrmc");
     }
 
-    public function register()
+    /**
+     * @return void
+     */
+    public function register(): void
     {
         // Подключение конфигурации
         $this->mergeConfigFrom(
@@ -30,7 +36,7 @@ class AweramComponentsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function configurePublishing()
+    protected function configurePublishing(): void
     {
         if ($this->app->runningInConsole()) {
             // Публикация layouts конмонентов.
@@ -40,9 +46,17 @@ class AweramComponentsServiceProvider extends ServiceProvider
                 __DIR__ . "/../stubs/layout/AuthLayout.php" => app_path("View/Components/AuthLayout.php"),
             ], "layout-components");
 
+            // Публикация layouts представлений
             $this->publishes([
                 __DIR__ . "/resources/views/layouts" => resource_path("views/vendor/wrmc/layouts")
             ], "layout-views");
+
+            // Публикация frontend
+            $this->publishes([
+                __DIR__ . "/../stubs/frontend/config" => base_path(),
+                __DIR__ . "/../stubs/frontend/css" => resource_path("css"),
+                __DIR__ . "/../stubs/frontend/js" => resource_path("js"),
+            ], "frontend");
         }
     }
 }
