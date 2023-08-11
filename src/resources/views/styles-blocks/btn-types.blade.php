@@ -1,13 +1,16 @@
 <div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
-    <x-wrmc::btn isLink href="#" target="_blank" class="m-2 btn-primary">Link btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-primary">
+    <a href="#" class="m-2 btn btn-primary" target="_blank">Link btn</a>
+    <button type="button" class="m-2 btn btn-primary">
         <x-wrmc::ico.circle-plus /> <span class="pl-btn-ico-text">Ico btn</span>
-    </x-wrmc::btn>
-    <x-wrmc::btn singleIco class="m-2 btn-primary">
+    </button>
+    <button type="button" class="m-2 btn btn-primary px-btn-x-ico lg:px-btn-x">
         <x-wrmc::ico.circle-plus />
-    </x-wrmc::btn>
-    <x-wrmc::btn :disabledCondition="true" class="m-2 btn-danger">Disabled btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-secondary">Default round btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-primary rounded-none">No rounded btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-success rounded">Custom rounded btn</x-wrmc::btn>
+        <span class="hidden lg:inline-block pl-btn-ico-text">Hidden text on lg</span>
+    </button>
+    <button type="button" class="m-2 btn btn-primary px-btn-x-ico"><x-wrmc::ico.circle-plus /></button>
+    <button disabled class="m-2 btn btn-danger">Disabled btn</button>
+    <div class="w-full"></div>
+    <button type="button" class="m-2 btn btn-secondary">Default round btn</button>
+    <button type="button" class="m-2 btn btn-primary rounded-none">No rounded btn</button>
+    <button type="button" class="m-2 btn btn-success rounded">Custom rounded btn</button>
 </div>

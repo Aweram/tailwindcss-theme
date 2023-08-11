@@ -1,20 +1,20 @@
 <div class="flex justify-between flex-wrap bg-white rounded p-2">
-    <x-wrmc::btn class="m-2 btn-light">Light btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-dark">Dark btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-success">Success btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-danger">Danger btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-warning">Warning btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-info">Info btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-primary">Primary btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-secondary">Secondary btn</x-wrmc::btn>
+    <button type="button" class="m-2 btn btn-light">Light btn</button>
+    <button type="button" class="m-2 btn btn-dark">Dark btn</button>
+    <button type="button" class="m-2 btn btn-success">Success btn</button>
+    <button type="button" class="m-2 btn btn-danger">Danger btn</button>
+    <button type="button" class="m-2 btn btn-warning">Warning btn</button>
+    <button type="button" class="m-2 btn btn-info">Info btn</button>
+    <button type="button" class="m-2 btn btn-primary">Primary btn</button>
+    <button type="button" class="m-2 btn btn-secondary">Secondary btn</button>
 </div>
 <div class="flex justify-between flex-wrap bg-white rounded p-2">
-    <x-wrmc::btn class="m-2 btn-outline-light">Light btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-outline-dark">Dark btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-outline-success">Success btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-outline-danger">Danger btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-outline-warning">Warning btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-outline-info">Info btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-outline-primary">Primary btn</x-wrmc::btn>
-    <x-wrmc::btn class="m-2 btn-outline-secondary">Secondary btn</x-wrmc::btn>
+    <button type="button" class="m-2 btn btn-outline-light">Light btn</button>
+    <button type="button" class="m-2 btn btn-outline-dark">Dark btn</button>
+    <button type="button" class="m-2 btn btn-outline-success">Success btn</button>
+    <button type="button" class="m-2 btn btn-outline-danger">Danger btn</button>
+    <button type="button" class="m-2 btn btn-outline-warning">Warning btn</button>
+    <button type="button" class="m-2 btn btn-outline-info">Info btn</button>
+    <button type="button" class="m-2 btn btn-outline-primary">Primary btn</button>
+    <button type="button" class="m-2 btn btn-outline-secondary">Secondary btn</button>
 </div>
