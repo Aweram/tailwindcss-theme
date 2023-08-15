@@ -40,6 +40,7 @@ export default {
             transparent: colors.transparent,
 
             body: 'rgba(var(--color-body), <alpha-value>)',
+            "body-bg": 'rgba(var(--color-body-bg), <alpha-value>)',
             // theme colors
             light: 'rgba(var(--color-light), <alpha-value>)',
             dark: 'rgba(var(--color-dark), <alpha-value>)',
@@ -66,38 +67,15 @@ export default {
             fontFamily: {
                 'sans': ['Nunito', ...defaultTheme.fontFamily.sans],
             },
-            fontSize: {
-                btn: ['var(--btn-font-size)', 'var(--btn-line-height)'],
-                'btn-sm': ['var(--btn-font-size-sm)', 'var(--btn-line-height-sm)'],
-                'btn-lg': ['var(--btn-font-size-lg)', 'var(--btn-line-height-lg)'],
-            },
             spacing: {
-                "btn-x": 'var(--btn-padding-x)',
-                "btn-x-sm": 'var(--btn-padding-x-sm)',
-                "btn-x-lg": 'var(--btn-padding-x-lg)',
                 "btn-ico-text": 'var(--btn-ico-text-space)',
                 "btn-x-ico": 'var(--btn-padding-x-ico)'
-            },
-            height: {
-                "btn": 'var(--btn-height)',
-                "btn-sm": 'var(--btn-height-sm)',
-                "btn-lg": 'var(--btn-height-lg)',
-            },
-            minWidth: {
-                "btn": 'var(--btn-height)',
-                "btn-sm": 'var(--btn-height-sm)',
-                "btn-lg": 'var(--btn-height-lg)',
-            },
-            borderWidth: {
-                "btn": 'var(--btn-border-width)',
-            },
-            borderRadius: {
-                "btn": 'var(--btn-border-radius)',
             },
         },
     },
     plugins: [
         require("./resources/tailwind-plugins/btnStyle"),
+        require("./resources/tailwind-plugins/formStyle"),
     ],
 }
 

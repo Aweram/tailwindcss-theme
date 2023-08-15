@@ -59,17 +59,21 @@ module.exports = plugin.withOptions(function (options = {}) {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexWrap: 'nowrap',
-                borderWidth: 'var(--btn-border-width)',
-                letterSpacing: '0.1em',
                 transition: 'var(--btn-transition)',
+
+                borderWidth: 'var(--btn-border-width)',
                 borderRadius: 'var(--btn-border-radius)',
+                borderStyle: "solid",
 
                 height: 'var(--btn-height)',
                 minWidth: 'var(--btn-height)',
-                fontSize: 'var(--btn-font-size)',
-                lineHeight: 'var(--btn-line-height)',
                 paddingLeft: 'var(--btn-padding-x)',
                 paddingRight: 'var(--btn-padding-x)',
+
+                fontSize: 'var(--btn-font-size)',
+                lineHeight: 'var(--btn-line-height)',
+                fontWeight: 'var(--btn-font-weight)',
+                letterSpacing: '0.1em',
 
                 "&:disabled": {
                     opacity: "0.25",
