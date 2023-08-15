@@ -77,6 +77,8 @@ module.exports = plugin.withOptions(function (options = {}) {
                     paddingLeft: "var(--input-padding-x)",
                     paddingRight: "var(--input-padding-x)",
                     marginLeft: "calc(var(--input-padding-x) * -1)",
+                    marginRight: "calc(var(--input-padding-x) * -1)",
+                    marginInlineEnd: "var(--input-padding-x)",
 
                     fontSize: "var(--input-font-size)",
                     lineHeight: "var(--input-line-height)",
@@ -99,6 +101,52 @@ module.exports = plugin.withOptions(function (options = {}) {
                     minHeight: "var(--input-height)",
                     paddingTop: "var(--input-textarea-padding-y)",
                     paddingBottom: "var(--input-textarea-padding-y)",
+                },
+                '&.form-control-sm': {
+                    minHeight: "var(--input-height-sm)",
+                    paddingTop: "var(--input-textarea-padding-y-sm)",
+                    paddingBottom: "var(--input-textarea-padding-y-sm)",
+                },
+                '&.form-control-lg': {
+                    minHeight: "var(--input-height-lg)",
+                    paddingTop: "var(--input-textarea-padding-y-lg)",
+                    paddingBottom: "var(--input-textarea-padding-y-lg)",
+                }
+            },
+
+            ".form-control-sm": {
+                height: "var(--input-height-sm)",
+                paddingLeft: "var(--input-padding-x-sm)",
+                paddingRight: "var(--input-padding-x-sm)",
+                fontSize: "var(--input-font-size-sm)",
+                lineHeight: "var(--input-line-height-sm)",
+                '&::file-selector-button': {
+                    height: "var(--input-height-sm)",
+                    paddingLeft: "var(--input-padding-x-sm)",
+                    paddingRight: "var(--input-padding-x-sm)",
+                    marginLeft: "calc(var(--input-padding-x-sm) * -1)",
+                    marginRight: "calc(var(--input-padding-x-sm) * -1)",
+                    marginInlineEnd: "var(--input-padding-x-sm)",
+                    fontSize: "var(--input-font-size-sm)",
+                    lineHeight: "var(--input-line-height-sm)",
+                }
+            },
+
+            ".form-control-lg": {
+                height: "var(--input-height-lg)",
+                paddingLeft: "var(--input-padding-x-lg)",
+                paddingRight: "var(--input-padding-x-lg)",
+                fontSize: "var(--input-font-size-lg)",
+                lineHeight: "var(--input-line-height-lg)",
+                '&::file-selector-button': {
+                    height: "var(--input-height-lg)",
+                    paddingLeft: "var(--input-padding-x-lg)",
+                    paddingRight: "var(--input-padding-x-lg)",
+                    marginLeft: "calc(var(--input-padding-x-lg) * -1)",
+                    marginRight: "calc(var(--input-padding-x-lg) * -1)",
+                    marginInlineEnd: "var(--input-padding-x-lg)",
+                    fontSize: "var(--input-font-size-lg)",
+                    lineHeight: "var(--input-line-height-lg)",
                 }
             }
         }
