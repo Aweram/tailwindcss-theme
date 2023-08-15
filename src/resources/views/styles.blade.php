@@ -15,35 +15,8 @@
         <h4 class="text-2xl">Form control small</h4>
         @include("wrmc::styles-blocks.form-control-sm")
         <h4 class="text-2xl">Form control large</h4>
-        @include("wrmc::styles-blocks.form-control-sm")
+        @include("wrmc::styles-blocks.form-control-lg")
         <h4 class="text-2xl">Form select</h4>
-        <div class="flex flex-wrap items-center bg-white rounded p-2">
-            <div class="w-1/3 pr-3">
-                <select class="form-select form-select-sm" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-
-            <div class="w-1/3 px-3">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-
-            <div class="w-1/3 pl-3">
-                <select class="form-select form-select-lg" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-        </div>
+        @include("wrmc::styles-blocks.form-select")
     </div>
 </div>
