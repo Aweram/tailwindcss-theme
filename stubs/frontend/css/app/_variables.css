@@ -38,7 +38,7 @@
     --input-border-radius: .625rem; /* 10px */
 
     --input-color: var(--color-body);
-    --input-bg: var(--color-body-bg);
+    --input-bg: 255, 255, 255; /* FFF */
     --input-border-color: var(--color-secondary);
     --input-focus-bg: var(--input-bg);
     --input-focus-border-color: var(--color-primary);
