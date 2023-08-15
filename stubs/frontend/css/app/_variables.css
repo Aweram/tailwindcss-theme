@@ -9,7 +9,7 @@
     --color-primary: 13, 110, 253; /* #0d6efd */
     --color-secondary: 108, 117, 125; /* #6c757d */
 
-    --color-body: 33, 37, 41; /* #212529 */
+    --color-body: 33, 37, 41; /* #212529 */ /* Еще передается вручную в svg для form-select */
     --color-body-bg: var(--color-light);
 
     /* Forms */
@@ -24,6 +24,7 @@
     --input-textarea-padding-y-sm: .438rem; /* 7px */
     --input-textarea-padding-y-lg: .563rem; /* 9px */
     --input-file-padding-fix: 3px;
+    --select-indicator-padding: calc(var(--input-padding-x) * 3);
 
     --input-font-size: .875rem; /* 14px */
     --input-font-size-sm: .75rem; /* 12px */
@@ -45,6 +46,11 @@
     --input-focus-border-color: var(--color-primary);
     --input-placeholder-color: var(--color-secondary);
     --input-disabled-bg: 233, 236, 239; /* #e9ecef */
+
+    --select-indicator-color: var(--color-body);
+    --select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='rgb(33, 37, 41)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+    --select-indicator-position: right var(--input-padding-x) center;
+    --select-indicator-size: 16px 12px;
 
     --input-transition: "border-color .15s ease-in-out, box-shadow .15s ease-in-out";
 

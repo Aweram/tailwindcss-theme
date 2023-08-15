@@ -1,7 +1,7 @@
 const plugin = require("tailwindcss/plugin")
 
 module.exports = plugin.withOptions(function (options = {}) {
-    return ({ addComponents, theme }) => {
+    return ({ addComponents }) => {
         const components = {
             ".form-control": {
                 display: "inline-flex",
@@ -49,22 +49,22 @@ module.exports = plugin.withOptions(function (options = {}) {
 
                 '&::-webkit-date-and-time-value': {
                     minWidth: "85px",
-                    margin: "0",
+                    margin: 0,
                 },
 
                 '&::-webkit-datetime-edit': {
                     display: 'inline-flex',
-                    padding: "0",
+                    padding: 0,
                 },
 
                 '&::placeholder': {
                     color: "rgba(var(--input-placeholder-color), 1)",
-                    opacity: "1"
+                    opacity: 1
                 },
 
                 '&:disabled': {
                     backgroundColor: "rgba(var(--input-disabled-bg), 1)",
-                    opacity: "1"
+                    opacity: 1
                 },
 
                 '&::file-selector-button': {
@@ -90,9 +90,9 @@ module.exports = plugin.withOptions(function (options = {}) {
                     pointerEvents: "none",
                     borderColor: "inherit",
                     borderStyle: "solid",
-                    borderWidth: "0",
+                    borderWidth: 0,
                     borderInlineEndWidth: "var(--input-border-width)",
-                    borderRadius: "0",
+                    borderRadius: 0,
                     transition: "var(--btn-transition)"
                 }
             },
