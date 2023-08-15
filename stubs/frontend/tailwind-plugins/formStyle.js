@@ -72,10 +72,18 @@ module.exports = plugin.withOptions(function (options = {}) {
                     justifyContent: "center",
                     alignItems: "center",
                     flexWrap: "nowrap",
+
                     height: "var(--input-height)",
                     paddingLeft: "var(--input-padding-x)",
                     paddingRight: "var(--input-padding-x)",
                     marginLeft: "calc(var(--input-padding-x) * -1)",
+
+                    fontSize: "var(--input-font-size)",
+                    lineHeight: "var(--input-line-height)",
+                    fontWeight: "var(--input-font-weight)",
+                    letterSpacing: ".1em",
+                    color: "var(--input-color)",
+
                     pointerEvents: "none",
                     borderColor: "inherit",
                     borderStyle: "solid",
@@ -83,6 +91,14 @@ module.exports = plugin.withOptions(function (options = {}) {
                     borderInlineEndWidth: "var(--input-border-width)",
                     borderRadius: "0",
                     transition: "var(--btn-transition)"
+                }
+            },
+
+            'textarea': {
+                '&.form-control': {
+                    minHeight: "var(--input-height)",
+                    paddingTop: "var(--input-textarea-padding-y)",
+                    paddingBottom: "var(--input-textarea-padding-y)",
                 }
             }
         }
