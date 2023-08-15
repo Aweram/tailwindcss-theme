@@ -52,6 +52,7 @@
     --input-textarea-padding-y: .563rem; /* 9px */
     --input-textarea-padding-y-sm: .438rem; /* 7px */
     --input-textarea-padding-y-lg: .563rem; /* 9px */
+    --input-file-padding-fix: 3px;
 
     --input-font-size: .875rem; /* 14px */
     --input-font-size-sm: .75rem; /* 12px */

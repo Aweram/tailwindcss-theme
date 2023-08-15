@@ -76,6 +76,7 @@ module.exports = plugin.withOptions(function (options = {}) {
                     height: "var(--input-height)",
                     paddingLeft: "var(--input-padding-x)",
                     paddingRight: "var(--input-padding-x)",
+                    paddingBottom: "var(--input-file-padding-fix)",
                     marginLeft: "calc(var(--input-padding-x) * -1)",
                     marginRight: "calc(var(--input-padding-x) * -1)",
                     marginInlineEnd: "var(--input-padding-x)",
