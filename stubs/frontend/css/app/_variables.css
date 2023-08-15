@@ -33,4 +33,6 @@
     --btn-border-radius: .625rem; /* 10px */
 
     --btn-ico-text-space: .625rem; /* 10px */
+
+    --btn-transition: "color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out";
 }

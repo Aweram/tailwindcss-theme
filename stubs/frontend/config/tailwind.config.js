@@ -76,6 +76,7 @@ export default {
                 "btn-x-sm": 'var(--btn-padding-x-sm)',
                 "btn-x-lg": 'var(--btn-padding-x-lg)',
                 "btn-ico-text": 'var(--btn-ico-text-space)',
+                "btn-x-ico": 'var(--btn-padding-x-ico)'
             },
             height: {
                 "btn": 'var(--btn-height)',
