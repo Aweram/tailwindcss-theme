@@ -113,7 +113,7 @@ export default {
     },
     plugins: [
         require("./resources/tailwind-plugins/btnStyle"),
-        require("./resources/tailwind-plugins/formStyle"),
+        require("./resources/tailwind-plugins/formControlStyle"),
     ],
 }
 
