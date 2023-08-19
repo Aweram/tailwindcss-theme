@@ -52,6 +52,18 @@
     --select-indicator-position: right var(--input-padding-x) center;
     --select-indicator-size: 16px 12px;
 
+    --check-input-width: 1em;
+    --check-input-mt: -.1em;
+    --check-input-border-radius: .25em;
+    --check-radio-border-radius: 50%;
+    --check-active-filter: brightness(90%);
+    --check-checked-bg-color: var(--input-focus-border-color);
+    --check-checked-border-color: var(--check-checked-bg-color);
+    --check-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
+    --check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='rgb(255, 255, 255)'/></svg>");
+    --check-disabled-opacity: .5;
+    --check-label-ml: .5em;
+
     --input-transition: "border-color .15s ease-in-out, box-shadow .15s ease-in-out";
 
     /* Buttons */

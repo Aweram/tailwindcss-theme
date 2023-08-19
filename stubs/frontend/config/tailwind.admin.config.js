@@ -115,6 +115,7 @@ export default {
         require("./resources/tailwind-plugins/btnStyle"),
         require("./resources/tailwind-plugins/formControlStyle"),
         require("./resources/tailwind-plugins/formSelectStyle"),
+        require("./resources/tailwind-plugins/formCheckStyle"),
     ],
 }
 

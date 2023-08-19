@@ -18,5 +18,9 @@
         @include("wrmc::styles-blocks.form-control-lg")
         <h4 class="text-2xl">Form select</h4>
         @include("wrmc::styles-blocks.form-select")
+        <h4 class="text-2xl">Checks</h4>
+        @include("wrmc::styles-blocks.form-check")
+        <h4 class="text-2xl">Radios</h4>
+        @include("wrmc::styles-blocks.form-radio")
     </div>
 </div>
