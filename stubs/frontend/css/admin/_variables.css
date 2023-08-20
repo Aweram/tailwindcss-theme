@@ -41,6 +41,12 @@
     --color-body: var(--color-dark); /* Еще передается вручную в svg для form-select */
     --color-body-bg: var(--color-light);
 
+    /* Sizes */
+    --indent-width: 1.5rem; /* 24px */
+    --indent-small: calc(var(--indent-width) * .625); /* 15px */
+    --indent-half: calc(var(--indent-width) / 2); /* 12px */
+    --indent-double: calc(var(--indent-width) * 2); /* 48px */
+
     /* Forms */
     --input-height: 2.5rem; /* 40px */
     --input-height-sm: 1.875rem; /* 30px */

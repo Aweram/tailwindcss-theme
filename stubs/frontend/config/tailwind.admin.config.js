@@ -112,6 +112,7 @@ export default {
         },
     },
     plugins: [
+        require("./resources/tailwind-plugins/gridExpand"),
         require("./resources/tailwind-plugins/btnStyle"),
         require("./resources/tailwind-plugins/formControlStyle"),
         require("./resources/tailwind-plugins/formSelectStyle"),
