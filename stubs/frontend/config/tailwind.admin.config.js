@@ -107,7 +107,11 @@ export default {
             },
             spacing: {
                 "btn-ico-text": 'var(--btn-ico-text-space)',
-                "btn-x-ico": 'var(--btn-padding-x-ico)'
+                "btn-x-ico": 'var(--btn-padding-x-ico)',
+                'indent-small': 'var(--indent-small)',
+                'indent': 'var(--indent-width)',
+                'indent-half': 'var(--indent-half)',
+                'indent-double': 'var(--indent-double)',
             },
         },
     },
