@@ -14,7 +14,9 @@
 
     /* Sizes */
     --indent-width: 1.5rem; /* 24px */
-    --indent-small: calc(var(--indent-width) * .625); /* 15px */
+    --indent-xs: .625rem; /* 10px */
+    --indent-sm: 1rem; /* 16px */
+    --indent-lg: 2rem; /* 32px */
     --indent-half: calc(var(--indent-width) / 2); /* 12px */
     --indent-double: calc(var(--indent-width) * 2); /* 48px */
 
