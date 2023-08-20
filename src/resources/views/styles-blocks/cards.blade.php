@@ -1,4 +1,7 @@
 <div class="row">
+    <div class="col w-full mb-indent-half">
+        <h3 class="text-3xl font-bold">Cards</h3>
+    </div>
     <div class="col w-1/3">
         <div class="card">
             <div class="card-body">

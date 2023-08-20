@@ -1,4 +1,4 @@
-<div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
+<div class="flex flex-wrap items-center justify-start">
     <a href="#" class="m-2 btn btn-primary" target="_blank">Link btn</a>
     <button type="button" class="m-2 btn btn-primary">
         <x-wrmc::ico.circle-plus /> <span class="pl-btn-ico-text">Ico btn</span>

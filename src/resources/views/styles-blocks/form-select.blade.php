@@ -1,4 +1,4 @@
-<div class="flex flex-wrap items-center bg-white rounded p-2">
+<div class="flex flex-wrap items-center">
     <div class="w-1/3 pr-3">
         <select class="form-select form-select-sm" aria-label="Default select example">
             <option selected>Open this select menu</option>

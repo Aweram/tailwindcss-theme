@@ -1,4 +1,4 @@
-<div class="flex justify-between items-center flex-wrap bg-white rounded p-2">
+<div class="flex justify-between items-center flex-wrap">
     <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault1">

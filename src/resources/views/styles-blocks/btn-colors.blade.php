@@ -1,4 +1,4 @@
-<div class="flex justify-between flex-wrap bg-white rounded p-2">
+<div class="flex justify-between flex-wrap">
     <button type="button" class="m-2 btn btn-light">Light btn</button>
     <button type="button" class="m-2 btn btn-dark">Dark btn</button>
     <button type="button" class="m-2 btn btn-success">Success btn</button>
@@ -8,7 +8,7 @@
     <button type="button" class="m-2 btn btn-primary">Primary btn</button>
     <button type="button" class="m-2 btn btn-secondary">Secondary btn</button>
 </div>
-<div class="flex justify-between flex-wrap bg-white rounded p-2">
+<div class="flex justify-between flex-wrap">
     <button type="button" class="m-2 btn btn-outline-light">Light btn</button>
     <button type="button" class="m-2 btn btn-outline-dark">Dark btn</button>
     <button type="button" class="m-2 btn btn-outline-success">Success btn</button>

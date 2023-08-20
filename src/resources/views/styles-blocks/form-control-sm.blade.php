@@ -1,4 +1,4 @@
-<div class="flex justify-between flex-wrap bg-white rounded p-2">
+<div class="flex justify-between flex-wrap">
     <div>
         <label for="textExample2" class="inline-block mb-2">Example label</label>
         <input type="text" id="textExample2" class="form-control form-control-sm" placeholder="Form text example">

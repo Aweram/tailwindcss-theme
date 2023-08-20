@@ -1,4 +1,4 @@
-<div class="flex justify-between items-center flex-wrap bg-white rounded p-2">
+<div class="flex justify-between items-center flex-wrap">
     <div class="form-check">
         <input type="checkbox" class="form-check-input" value="" id="checkDefault">
         <label for="checkDefault" class="form-check-label">

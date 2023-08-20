@@ -1,4 +1,4 @@
-<div class="flex flex-wrap items-center justify-start bg-white rounded p-2">
+<div class="flex flex-wrap items-center justify-start">
     <button type="button" class="m-2 btn btn-primary btn-sm">Small btn</button>
     <button type="button" class="m-2 btn btn-primary btn-sm">
         <x-wrmc::ico.circle-plus width="15" height="auto" /> <span class="pl-btn-ico-text">Ico small</span>
