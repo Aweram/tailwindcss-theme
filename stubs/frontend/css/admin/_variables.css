@@ -47,6 +47,31 @@
     --indent-half: calc(var(--indent-width) / 2); /* 12px */
     --indent-double: calc(var(--indent-width) * 2); /* 48px */
 
+    --border-width: 1px;
+    --border-radius: .625rem; /* 10px */
+    --spacer: 1rem; /* 16px */
+
+    /* Cards */
+    --card-border-width: var(--border-width);
+    --card-border-color: var(--color-secondary);
+    --card-border-radius: var(--border-radius);
+    --card-inner-border-radius: calc(var(--card-border-radius) - var(--card-border-width));
+    --card-spacer-y: var(--spacer);
+    --card-spacer-x: var(--spacer);
+    --card-title-spacer-y: calc(var(--spacer) * .5);
+    --card-text-spacer-y: var(--spacer);
+    --card-cap-padding-y: calc(var(--card-spacer-y) * .5);
+    --card-cap-padding-x: var(--card-spacer-x);
+
+    --card-bg: 255, 255, 255;
+    --card-color: var(--color-body);
+    --card-title-color: var(--color-body);
+    --card-subtitle-color: var(--color-body);
+    --card-cap-color: var(--color-body);
+    --card-cap-bg: rgba(var(--color-light), 1);
+
+    --card-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
     /* Forms */
     --input-height: 2.5rem; /* 40px */
     --input-height-sm: 1.875rem; /* 30px */
@@ -71,8 +96,8 @@
 
     --input-font-weight: 400;
 
-    --input-border-width: 1px;
-    --input-border-radius: .625rem; /* 10px */
+    --input-border-width: var(--border-width);
+    --input-border-radius: var(--border-radius);
 
     --input-color: var(--color-body);
     --input-bg: 255, 255, 255; /* FFF */

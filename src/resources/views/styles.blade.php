@@ -23,6 +23,6 @@
         <h4 class="text-2xl">Radios</h4>
         @include("wrmc::styles-blocks.form-radio")
         <h3 class="text-3xl font-bold">Cards</h3>
-        <div></div>
+        @include("wrmc::styles-blocks.cards")
     </div>
 </div>
