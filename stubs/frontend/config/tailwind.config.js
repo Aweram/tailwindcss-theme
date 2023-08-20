@@ -76,6 +76,7 @@ export default {
                 'indent-lg': 'var(--indent-lg)',
                 'indent-half': 'var(--indent-half)',
                 'indent-double': 'var(--indent-double)',
+                'spacer': 'var(--indent-spacer)',
             },
         },
     },
