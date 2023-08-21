@@ -6,11 +6,11 @@
             </div>
             <div class="card-body">
                 <h4 class="text-2xl card-subtitle">Colors</h4>
-                @include("wrmc::styles-blocks.btn-colors")
+                @include("tt::styles-blocks.btn-colors")
                 <h4 class="text-2xl card-subtitle">Types</h4>
-                @include("wrmc::styles-blocks.btn-types")
+                @include("tt::styles-blocks.btn-types")
                 <h4 class="text-2xl card-subtitle">Sizes</h4>
-                @include("wrmc::styles-blocks.btn-sizes")
+                @include("tt::styles-blocks.btn-sizes")
             </div>
         </div>
     </div>

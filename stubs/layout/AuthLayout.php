@@ -2,7 +2,7 @@
 
 namespace App\View\Components;
 
-use PortedCheese\AweramComponents\View\Components\AuthLayout as VendorComponent;
+use Aweram\TailwindcssTheme\View\Components\AuthLayout as VendorComponent;
 
 class AuthLayout extends VendorComponent
 {}

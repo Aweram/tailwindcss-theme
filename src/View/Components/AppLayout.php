@@ -1,6 +1,6 @@
 <?php
 
-namespace PortedCheese\AweramComponents\View\Components;
+namespace Aweram\TailwindcssTheme\View\Components;
 
 use Illuminate\View\Component;
 
@@ -10,7 +10,7 @@ class AppLayout extends Component
 
     public function __construct()
     {
-        $this->cssFile = config("aweram-components.appCssFile");
+        $this->cssFile = config("tailwindcss-theme.appCssFile");
     }
 
     /**
@@ -20,6 +20,6 @@ class AppLayout extends Component
      */
     public function render()
     {
-        return view('wrmc::layouts.app');
+        return view('tt::layouts.app');
     }
 }

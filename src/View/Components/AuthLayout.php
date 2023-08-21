@@ -1,6 +1,6 @@
 <?php
 
-namespace PortedCheese\AweramComponents\View\Components;
+namespace Aweram\TailwindcssTheme\View\Components;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\View\Component;
@@ -21,7 +21,7 @@ class AuthLayout extends Component
         $this->imgText = $imgText;
         $this->route = Route::has($route) ? $route : null;
         $this->routeText = $routeText ?? __("Back to home");
-        $this->cssFile = config("aweram-components.authCssFile");
+        $this->cssFile = config("tailwindcss-theme.authCssFile");
     }
 
     /**
@@ -31,6 +31,6 @@ class AuthLayout extends Component
      */
     public function render()
     {
-        return view('wrmc::layouts.auth');
+        return view('tt::layouts.auth');
     }
 }

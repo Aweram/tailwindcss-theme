@@ -1,10 +1,10 @@
 <?php
 
-namespace PortedCheese\AweramComponents;
+namespace Aweram\TailwindcssTheme;
 
 use Illuminate\Support\ServiceProvider;
 
-class AweramComponentsServiceProvider extends ServiceProvider
+class TailwindThemeServiceProvider extends ServiceProvider
 {
     /**
      * @return void
@@ -14,7 +14,7 @@ class AweramComponentsServiceProvider extends ServiceProvider
         $this->configurePublishing();
 
         // Подключение страниц
-        $this->loadViewsFrom(__DIR__ . "/resources/views", "wrmc");
+        $this->loadViewsFrom(__DIR__ . "/resources/views", "tt");
     }
 
     /**
@@ -24,7 +24,7 @@ class AweramComponentsServiceProvider extends ServiceProvider
     {
         // Подключение конфигурации
         $this->mergeConfigFrom(
-            __DIR__ . "/config/aweram-components.php", "aweram-components"
+            __DIR__ . "/config/tailwindcss-theme.php", "tailwindcss-theme"
         );
 
         // Подключение routes

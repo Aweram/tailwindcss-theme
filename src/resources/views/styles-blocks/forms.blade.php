@@ -6,17 +6,17 @@
             </div>
             <div class="card-body">
                 <h4 class="text-2xl card-title">Form control</h4>
-                @include("wrmc::styles-blocks.form-control")
+                @include("tt::styles-blocks.form-control")
                 <h4 class="text-2xl card-title">Form control small</h4>
-                @include("wrmc::styles-blocks.form-control-sm")
+                @include("tt::styles-blocks.form-control-sm")
                 <h4 class="text-2xl card-title">Form control large</h4>
-                @include("wrmc::styles-blocks.form-control-lg")
+                @include("tt::styles-blocks.form-control-lg")
                 <h4 class="text-2xl card-title">Form select</h4>
-                @include("wrmc::styles-blocks.form-select")
+                @include("tt::styles-blocks.form-select")
                 <h4 class="text-2xl card-title">Checks</h4>
-                @include("wrmc::styles-blocks.form-check")
+                @include("tt::styles-blocks.form-check")
                 <h4 class="text-2xl card-title">Radios</h4>
-                @include("wrmc::styles-blocks.form-radio")
+                @include("tt::styles-blocks.form-radio")
             </div>
         </div>
     </div>

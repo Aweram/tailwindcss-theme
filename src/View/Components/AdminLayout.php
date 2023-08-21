@@ -1,6 +1,6 @@
 <?php
 
-namespace PortedCheese\AweramComponents\View\Components;
+namespace Aweram\TailwindcssTheme\View\Components;
 
 use Illuminate\View\Component;
 
@@ -10,7 +10,7 @@ class AdminLayout extends Component
 
     public function __construct()
     {
-        $this->cssFile = config("aweram-components.adminCssFile");
+        $this->cssFile = config("tailwindcss-theme.adminCssFile");
     }
 
     /**
@@ -20,6 +20,6 @@ class AdminLayout extends Component
      */
     public function render()
     {
-        return view('wrmc::layouts.admin');
+        return view('tt::layouts.admin');
     }
 }

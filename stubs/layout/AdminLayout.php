@@ -2,7 +2,7 @@
 
 namespace App\View\Components;
 
-use PortedCheese\AweramComponents\View\Components\AdminLayout as VendorComponent;
+use Aweram\TailwindcssTheme\View\Components\AdminLayout as VendorComponent;
 
 class AdminLayout extends VendorComponent
 {}

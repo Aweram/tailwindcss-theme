@@ -1,6 +1,6 @@
 {
-    "name": "portedcheese/aweram-components",
-    "description": "Set of laravel components",
+    "name": "aweram/tailwindcss-theme",
+    "description": "Tailwind theme for laravel",
     "type": "library",
     "require": {
         "laravel/framework": "^10.10"
@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PortedCheese\\AweramComponents\\": "src/"
+            "Aweram\\TailwindcssTheme\\": "src/"
         }
     },
     "authors": [
@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "PortedCheese\\AweramComponents\\AweramComponentsServiceProvider"
+                "Aweram\\TailwindcssTheme\\TailwindThemeServiceProvider"
             ]
         }
     },
