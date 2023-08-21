@@ -87,6 +87,7 @@ export default {
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/formSelectStyle"),
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/formCheckStyle"),
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/cardStyle"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/tableStyle"),
     ],
 }
 

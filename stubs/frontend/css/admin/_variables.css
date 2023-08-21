@@ -74,6 +74,17 @@
 
     --card-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
+    /* Table */
+    --table-cell-padding-x: var(--indent-width);
+    --table-cell-padding-y: var(--spacer);
+    --table-border-width: var(--border-width);
+
+    --table-head-font-weight: 500;
+
+    --table-border-color: rgba(var(--color-secondary), .4);
+    --table-bg: 255, 255, 255;
+    --table-head-bg: rgba(var(--color-light), 1);
+
     /* Forms */
     --input-height: 2.5rem; /* 40px */
     --input-height-sm: 1.875rem; /* 30px */

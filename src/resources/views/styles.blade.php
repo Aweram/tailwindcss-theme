@@ -4,5 +4,6 @@
         @include("tt::styles-blocks.btns")
         @include("tt::styles-blocks.forms")
         @include("tt::styles-blocks.cards")
+        @include("tt::styles-blocks.table")
     </div>
 </div>
