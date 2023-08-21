@@ -7,7 +7,7 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/css/admin.css",
 
-        "./vendor/portedcheese/aweram-components/src/resources/**/*.blade.php",
+        "./vendor/aweram/tailwindcss-theme/src/resources/**/*.blade.php",
     ],
     theme: {
         container: {
@@ -119,12 +119,12 @@ export default {
         },
     },
     plugins: [
-        require("./vendor/portedcheese/aweram-components/src/resources/tailwind-plugins/gridExpand"),
-        require("./vendor/portedcheese/aweram-components/src/resources/tailwind-plugins/btnStyle"),
-        require("./vendor/portedcheese/aweram-components/src/resources/tailwind-plugins/formControlStyle"),
-        require("./vendor/portedcheese/aweram-components/src/resources/tailwind-plugins/formSelectStyle"),
-        require("./vendor/portedcheese/aweram-components/src/resources/tailwind-plugins/formCheckStyle"),
-        require("./vendor/portedcheese/aweram-components/src/resources/tailwind-plugins/cardStyle"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/gridExpand"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/btnStyle"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/formControlStyle"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/formSelectStyle"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/formCheckStyle"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/cardStyle"),
     ],
 }
 
