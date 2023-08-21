@@ -4,7 +4,7 @@ namespace Aweram\TailwindcssTheme;
 
 use Illuminate\Support\ServiceProvider;
 
-class TailwindThemeServiceProvider extends ServiceProvider
+class TailwindcssThemeServiceProvider extends ServiceProvider
 {
     /**
      * @return void

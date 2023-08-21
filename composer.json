@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aweram\\TailwindcssTheme\\TailwindThemeServiceProvider"
+                "Aweram\\TailwindcssTheme\\TailwindcssThemeServiceProvider"
             ]
         }
     },
