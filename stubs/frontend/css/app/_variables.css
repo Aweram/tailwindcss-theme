@@ -11,6 +11,7 @@
 
     --color-body: 33, 37, 41; /* #212529 */ /* Еще передается вручную в svg для form-select */
     --color-body-bg: var(--color-light);
+    --scrollbar-color: rgba(var(--color-secondary), 1);
 
     /* Sizes */
     --indent-width: 1.5rem; /* 24px */

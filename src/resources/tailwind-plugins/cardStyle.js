@@ -19,6 +19,7 @@ module.exports = plugin.withOptions(function (options = {}) {
                 borderColor: "rgba(var(--card-border-color), 1)",
 
                 boxShadow: 'var(--card-box-shadow)',
+                overflow: 'hidden',
 
                 '& > *:last-child': {
                     borderRadius: '0 0 var(--card-inner-border-radius) var(--card-inner-border-radius)',

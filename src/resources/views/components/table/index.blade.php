@@ -1,4 +1,4 @@
-<div class="block w-full overflow-x-auto">
+<div class="block w-full overflow-x-auto beautify-scrollbar">
     <table {{ $attributes->merge(['class' => 'table-style']) }}>
         @isset($head)
             <thead>{{ $head }}</thead>
