@@ -7,7 +7,7 @@
     @unless ($sortable)
         {{ $slot }}
     @else
-        <botton typy="button" {{ $attributes->except(['class', 'colspan']) }} class="flex items-center justify-between space-x-1 text-left hover:cursor-pointer">
+        <button type="button" {{ $attributes->except(['class', 'colspan']) }} class="flex w-full items-center justify-between space-x-1 text-left hover:cursor-pointer">
             <span>{{ $slot }}</span>
             @if ($direction == "asc")
                 <svg width="10" height="18" viewBox="0 0 14 26">
@@ -30,6 +30,6 @@
                     </g>
                 </svg>
             @endif
-        </botton>
+        </button>
     @endunless
 </th>
