@@ -1,10 +1,11 @@
-<x-auth-layout title="{{ __('Log in') }}" img="imgs/aweram/login.svg" img-text="{{ __('Authorization') }}">
+<x-auth-layout title="{{ __('Log in') }}"
+               img="imgs/aweram/login.svg" img-text="{{ __('Authorization') }}">
     <h1>{{ __("Authorization") }}</h1>
 
     <form action="{{ route('login') }}" method="post">
         @csrf
         <div class="space-y-indent-half">
-            <x-tt::form.success />
+            <x-tt::form.status />
             <x-tt::form.validation-errors />
 
             <div>

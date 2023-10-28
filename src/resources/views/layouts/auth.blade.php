@@ -17,7 +17,7 @@
             <img src="{{ asset("imgs/aweram/logo.png") }}" alt="Aweram" class="h-auto w-32 hidden xs:inline-block">
             <img src="{{ asset("imgs/aweram/logo-short.png") }}" alt="Aweram" class="h-auto w-6 xs:hidden">
         </div>
-        <div class="col w-2/3 xs:w-1/2 text-right lg:text-left">
+        <div class="col w-2/3 xs:w-1/2 text-right">
             @isset($route)
                 <a class="text-sm font-light hover:text-primary lowercase" href="{{ route($route) }}">
                     < {{ $routeText }}
