@@ -115,6 +115,7 @@ export default {
                 'indent-half': 'var(--indent-half)',
                 'indent-double': 'var(--indent-double)',
                 'spacer': 'var(--indent-spacer)',
+                'auth-form': '342px',
             },
         },
     },
