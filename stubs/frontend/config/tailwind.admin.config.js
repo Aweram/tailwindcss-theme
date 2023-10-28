@@ -7,7 +7,7 @@ export default {
         "./resources/**/*.blade.php",
         "./resources/css/admin.css",
 
-        "./vendor/aweram/tailwindcss-theme/src/resources/**/*.blade.php",
+        "./vendor/aweram/tailwindcss-theme/src/resources/views/**/*.blade.php",
     ],
     theme: {
         container: {

@@ -48,7 +48,7 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
 
             // Публикация layouts представлений
             $this->publishes([
-                __DIR__ . "/resources/views/layouts" => resource_path("views/vendor/wrmc/layouts")
+                __DIR__ . "/resources/views/layouts" => resource_path("views/vendor/tt/layouts")
             ], "layout-views");
 
             // Публикация frontend
@@ -57,6 +57,11 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
                 __DIR__ . "/../stubs/frontend/css" => resource_path("css"),
                 __DIR__ . "/../stubs/frontend/js" => resource_path("js")
             ], "frontend");
+
+            // Публикация изображений
+            $this->publishes([
+                __DIR__ . "/imgs" => public_path("imgs/aweram"),
+            ], "images");
         }
     }
 }

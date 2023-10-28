@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="text-body">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="text-body font-normal bg-body-bg">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,8 +14,8 @@
 <div class="flex flex-wrap w-full min-h-screen">
     <div class="absolute top-4 left-14 right-14 h-auto row items-end">
         <div class="col w-1/3 xs:w-1/2">
-            <img src="{{ asset("img/aweram-logo.png") }}" alt="Aweram" class="h-auto w-32 hidden xs:inline-block">
-            <img src="{{ asset("img/aweram-logo-short.png") }}" alt="Aweram" class="h-auto w-6 xs:hidden">
+            <img src="{{ asset("imgs/aweram/logo.png") }}" alt="Aweram" class="h-auto w-32 hidden xs:inline-block">
+            <img src="{{ asset("imgs/aweram/logo-short.png") }}" alt="Aweram" class="h-auto w-6 xs:hidden">
         </div>
         <div class="col w-2/3 xs:w-1/2 text-right lg:text-left">
             @isset($route)
@@ -37,5 +37,8 @@
         </div>
     </div>
 </div>
+
+<!-- Scripts -->
+@vite('resources/js/admin.js')
 </body>
 </html>
