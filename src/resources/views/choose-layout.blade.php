@@ -5,14 +5,10 @@
         </x-admin-layout>
         @break
 
-    @case("auth")
-        <x-auth-layout>
-
-        </x-auth-layout>
-        @break
-
     @default
         <x-app-layout>
-            @include("tt::styles")
+            <div class="container">
+                @include("tt::styles")
+            </div>
         </x-app-layout>
 @endswitch

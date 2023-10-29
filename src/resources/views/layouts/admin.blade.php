@@ -8,14 +8,21 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- CSS -->
+    @livewireStyles
     @vite("resources/css/{$cssFile}")
 </head>
 <body>
 <div>
-    {{ $slot }}
+    <x-admin.admin-menu />
+    <div class="transition-all duration-500 w-full px-indent-half xl:px-indent xl:ml-menu xl:w-outer-menu">
+        <div class="max-w-[1440px] mx-auto">
+            {{ $slot }}
+        </div>
+    </div>
 </div>
 
 <!-- Scripts -->
+@livewireScripts
 @vite('resources/js/admin.js')
 </body>
 </html>

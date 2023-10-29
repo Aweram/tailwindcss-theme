@@ -3,7 +3,8 @@
     "description": "Tailwind theme for laravel",
     "type": "library",
     "require": {
-        "laravel/framework": "^10.10"
+        "laravel/framework": "^10.10",
+        "livewire/livewire": "^3.0"
     },
     "license": "MIT",
     "autoload": {
