@@ -12,14 +12,15 @@
     @vite("resources/css/{$cssFile}")
 </head>
 <body>
-<div>
+<main x-data="{ menuIsOpen: false }">
+    <x-admin.admin-navigation />
     <x-admin.admin-menu />
     <div class="transition-all duration-500 w-full px-indent-half xl:px-indent xl:ml-menu xl:w-outer-menu">
         <div class="max-w-[1440px] mx-auto">
             {{ $slot }}
         </div>
     </div>
-</div>
+</main>
 
 <!-- Scripts -->
 @livewireScripts

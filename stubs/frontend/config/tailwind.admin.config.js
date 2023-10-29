@@ -115,7 +115,12 @@ export default {
                 'indent-half': 'var(--indent-half)',
                 'indent-double': 'var(--indent-double)',
                 'spacer': 'var(--indent-spacer)',
-                'auth-form': '342px',
+                'auth-form': 'var(--auth-form)',
+
+                'menu': 'var(--menu-length)',
+                'outer-menu': "calc(100% - var(--menu-length))",
+                'nav': "calc(100% - var(--indent-width))",
+                'nav-full': "calc(100% - var(--menu-length) - var(--indent-double))",
             },
         },
     },

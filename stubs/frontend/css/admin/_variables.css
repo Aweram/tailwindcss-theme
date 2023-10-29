@@ -54,6 +54,9 @@
     --border-radius: .625rem; /* 10px */
     --spacer: var(--indent-sm); /* 16px */
 
+    --auth-form: 342px;
+    --menu-length: 260px;
+
     /* Cards */
     --card-border-width: var(--border-width);
     --card-border-color: var(--color-secondary);
