@@ -2,7 +2,7 @@
     <div class="beautify-scrollbar flex relative py-indent-half px-indent">
         <ul class="flex flex-wrap items-center justify-start mr-auto">
             <li class="px-1 xl:hidden">
-                <button type="button" x-on:click="menuIsOpen = ! menuIsOpen">
+                <button type="button" class="navigation-link" x-on:click="menuIsOpen = ! menuIsOpen">
                     <x-tt::ico.bars />
                 </button>
             </li>

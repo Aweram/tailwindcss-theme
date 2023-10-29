@@ -54,8 +54,12 @@
     --border-radius: .625rem; /* 10px */
     --spacer: var(--indent-sm); /* 16px */
 
+    /* Menu and Navigation */
     --auth-form: 342px;
     --menu-length: 260px;
+
+    --navigation-font-size: 1rem;
+    --navigation-line-height: 1.5rem;
 
     /* Cards */
     --card-border-width: var(--border-width);
