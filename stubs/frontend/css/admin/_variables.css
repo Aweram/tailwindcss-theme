@@ -62,6 +62,18 @@
     --z-modal-backdrop: 1050;
     --z-modal: 1055;
 
+    /* Dropdown */
+    --dropdown-min-width: 10rem;
+    --dropdown-padding-x: 0;
+    --dropdown-padding-y: .5rem;
+    --dropdown-font-size: 1rem;
+    --dropdown-color: var(--color-body);
+    --dropdown-bg: #fff;
+
+    --dropdown-border-width: var(--border-width);
+    --dropdown-border-color: var(--color-secondary);
+    --dropdown-border-radius: var(--border-radius);
+
     /* Menu and Navigation */
     --auth-form: 342px;
     --menu-length: 260px;

@@ -143,6 +143,7 @@ export default {
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/tableStyle"),
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/beautifyScrollbar"),
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/adminNavigationLink"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/dropdownStyle"),
     ],
 }
 
