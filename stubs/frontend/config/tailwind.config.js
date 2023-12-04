@@ -78,6 +78,13 @@ export default {
                 'indent-double': 'var(--indent-double)',
                 'spacer': 'var(--indent-spacer)',
             },
+            zIndex: {
+                'dropdown': 'var(--z-dropdown)',
+                'sticky': 'var(--z-sticky)',
+                'fixed': 'var(--z-sticky)',
+                'modal-backdrop': 'var(--z-modal-backdrop)',
+                'modal': 'var(--z-modal)',
+            }
         },
     },
     plugins: [

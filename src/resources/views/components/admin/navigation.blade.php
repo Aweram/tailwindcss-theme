@@ -1,11 +1,21 @@
-<header class="w-nav xl:w-nav-full fixed right-0 z-10 mt-indent-sm mx-indent-half xl:mx-indent bg-white rounded-lg shadow-lg transition-all duration-500">
-    <div class="beautify-scrollbar flex relative py-indent-half px-indent">
-        <ul class="flex flex-wrap items-center justify-start mr-auto">
+<header class="w-nav xl:w-nav-full fixed right-0 top-0 z-fixed mt-indent-sm mx-indent-half xl:mx-indent bg-white rounded-lg shadow-lg transition-all duration-500">
+    <div class="beautify-scrollbar flex justify-between relative py-indent-half px-indent">
+        <ul class="flex flex-nowrap items-center justify-start mr-auto">
             <li class="px-1 xl:hidden">
                 <button type="button" class="navigation-link" x-on:click="menuIsOpen = ! menuIsOpen">
                     <x-tt::ico.bars />
                 </button>
             </li>
+        </ul>
+
+        <ul class="flex flex-nowrap items-center justify-end ml-auto">
+            @auth
+                <li class="px-1">
+                    <button type="button" class="navigation-link">
+                        {{ \Illuminate\Support\Facades\Auth::getUser()->name }}
+                    </button>
+                </li>
+            @endauth
         </ul>
     </div>
 </header>

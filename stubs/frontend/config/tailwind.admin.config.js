@@ -122,6 +122,15 @@ export default {
                 'nav': "calc(100% - var(--indent-width))",
                 'nav-full': "calc(100% - var(--menu-length) - var(--indent-double))",
             },
+            zIndex: {
+                'dropdown': 'var(--z-dropdown)',
+                'sticky': 'var(--z-sticky)',
+                'fixed': 'var(--z-sticky)',
+                'admin-menu-backdrop': 'var(--z-admin-menu-backdrop)',
+                'admin-menu': 'var(--z-admin-menu)',
+                'modal-backdrop': 'var(--z-modal-backdrop)',
+                'modal': 'var(--z-modal)',
+            }
         },
     },
     plugins: [

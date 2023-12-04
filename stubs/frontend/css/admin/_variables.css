@@ -54,6 +54,14 @@
     --border-radius: .625rem; /* 10px */
     --spacer: var(--indent-sm); /* 16px */
 
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-admin-menu-backdrop: 1040;
+    --z-admin-menu: 1045;
+    --z-modal-backdrop: 1050;
+    --z-modal: 1055;
+
     /* Menu and Navigation */
     --auth-form: 342px;
     --menu-length: 260px;
