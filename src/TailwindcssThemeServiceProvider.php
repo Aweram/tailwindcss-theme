@@ -44,8 +44,6 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
                 __DIR__ . "/../stubs/layout/AdminLayout.php" => app_path("View/Components/AdminLayout.php"),
                 __DIR__ . "/../stubs/layout/AppLayout.php" => app_path("View/Components/AppLayout.php"),
                 __DIR__ . "/../stubs/layout/AuthLayout.php" => app_path("View/Components/AuthLayout.php"),
-                __DIR__ . "/../stubs/components/AdminMenu.php" => app_path("View/Components/Admin/AdminMenu.php"),
-                __DIR__ . "/../stubs/components/AdminNavigation.php" => app_path("View/Components/Admin/AdminNavigation.php"),
             ], "layout-components");
 
             // Публикация layouts представлений
