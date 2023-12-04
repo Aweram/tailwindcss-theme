@@ -19,16 +19,12 @@
                             </button>
                         </x-slot>
                         <x-slot name="content">
-                            <ul>
-                                <li class="hover:bg-light-hover px-indent-half">
-                                    <form method="post" action="{{ route('logout') }}" x-data>
-                                        @csrf
-                                        <a href="#" @click.prevent="$root.submit();">
-                                            {{ __("Log Out") }}
-                                        </a>
-                                    </form>
-                                </li>
-                            </ul>
+                            <form method="post" action="{{ route('logout') }}" x-data>
+                                @csrf
+                                <a href="#" @click.prevent="$root.submit();" class="block px-indent-half hover:bg-light-hover">
+                                    {{ __("Log Out") }}
+                                </a>
+                            </form>
                         </x-slot>
                     </x-tt::dropdown>
                 </li>

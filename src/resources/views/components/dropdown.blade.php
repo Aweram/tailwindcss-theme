@@ -1,6 +1,6 @@
 <div class="relative"
      x-data="{ open: false }"
-     @click.away="open=false"
+     @click.outside="open=false"
      @click.stop="open=false">
     <div @click.stop="open = !open" class="inline-block">
         @isset($button)
