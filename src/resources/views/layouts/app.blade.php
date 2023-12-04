@@ -8,6 +8,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- CSS -->
+    @livewireStyles
     @vite("resources/css/{$cssFile}")
 </head>
 <body class="app">
@@ -16,6 +17,7 @@
 </div>
 
 <!-- Scripts -->
+@livewireScripts
 @vite('resources/js/app.js')
 </body>
 </html>

@@ -11,9 +11,26 @@
         <ul class="flex flex-nowrap items-center justify-end ml-auto">
             @auth
                 <li class="px-1">
-                    <button type="button" class="navigation-link">
-                        {{ \Illuminate\Support\Facades\Auth::getUser()->name }}
-                    </button>
+                    <x-tt::dropdown class="origin-top-right right-0 mt-2">
+                        <x-slot name="button">
+                            <button type="button" class="navigation-link">
+                                {{ \Illuminate\Support\Facades\Auth::getUser()->name }}
+                                <x-tt::ico.arrow-down class="ml-2 -mr-0.5" />
+                            </button>
+                        </x-slot>
+                        <x-slot name="content">
+                            <ul>
+                                <li class="hover:bg-light-hover px-indent-half">
+                                    <form method="post" action="{{ route('logout') }}" x-data>
+                                        @csrf
+                                        <a href="#" @click.prevent="$root.submit();">
+                                            {{ __("Log Out") }}
+                                        </a>
+                                    </form>
+                                </li>
+                            </ul>
+                        </x-slot>
+                    </x-tt::dropdown>
                 </li>
             @endauth
         </ul>

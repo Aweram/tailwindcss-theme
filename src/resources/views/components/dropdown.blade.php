@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'relative']) }}
+<div class="relative"
      x-data="{ open: false }"
      @click.away="open=false"
      @click.stop="open=false">
@@ -21,7 +21,7 @@
          x-transition:leave="transition ease-in duration-75"
          x-transition:leave-start="transform opacity-100 scale-100"
          x-transition:leave-end="transform opacity-0 scale-95"
-         class="dropdown-menu"
+         {{ $attributes->merge(['class' => 'dropdown-menu']) }}
          style="display: none" @click="open=false">
         @isset($content)
             {{ $content }}
