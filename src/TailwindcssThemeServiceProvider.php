@@ -2,7 +2,9 @@
 
 namespace Aweram\TailwindcssTheme;
 
+use Aweram\TailwindcssTheme\Livewire\ExampleModalsWire;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class TailwindcssThemeServiceProvider extends ServiceProvider
 {
@@ -15,6 +17,9 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
 
         // Подключение страниц
         $this->loadViewsFrom(__DIR__ . "/resources/views", "tt");
+
+        // Livewire
+        Livewire::component("tt-example-form", ExampleModalsWire::class);
     }
 
     /**
