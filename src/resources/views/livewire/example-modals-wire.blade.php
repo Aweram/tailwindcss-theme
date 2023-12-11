@@ -8,7 +8,14 @@
                 <div class="text-center mb-indent">
                     <h3>{{ __("Are you shure?") }}</h3>
                 </div>
-                <button type="button" class="btn btn-secondary" wire:click="closeDelete">Close</button>
+                <div class="flex justify-around">
+                    <button type="button" class="btn btn-secondary" wire:click="closeDelete">
+                        {{ __("Close") }}
+                    </button>
+                    <button type="button" class="btn btn-danger" wire:click="closeDelete">
+                        {{ __("Confirm") }}
+                    </button>
+                </div>
             </x-slot>
         </x-tt::modal.dialog>
     @endteleport

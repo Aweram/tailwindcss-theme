@@ -97,6 +97,7 @@ export default {
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/tableStyle"),
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/beautifyScrollbar"),
         require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/dropdownStyle"),
+        require("./vendor/aweram/tailwindcss-theme/src/resources/tailwind-plugins/modalStyle"),
     ],
 }
 
