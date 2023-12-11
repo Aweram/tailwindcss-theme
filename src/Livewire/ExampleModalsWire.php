@@ -6,7 +6,8 @@ use Livewire\Component;
 
 class ExampleModalsWire extends Component
 {
-    public $dispDelete = false;
+    public $displayDelete = false;
+    public $displayCustomDelete = false;
 
     public function render()
     {
@@ -15,11 +16,31 @@ class ExampleModalsWire extends Component
 
     public function showDelete()
     {
-        $this->dispDelete = true;
+        $this->displayDelete = true;
+    }
+
+    public function showCustomDelete()
+    {
+        $this->displayCustomDelete = true;
     }
 
     public function closeDelete()
     {
-        $this->dispDelete = false;
+        $this->displayDelete = false;
+    }
+
+    public function closeCustomDelete()
+    {
+        $this->displayCustomDelete = false;
+    }
+
+    public function confirmDelete()
+    {
+        $this->displayDelete = false;
+    }
+
+    public function confirmCustomDelete()
+    {
+        $this->displayCustomDelete = false;
     }
 }

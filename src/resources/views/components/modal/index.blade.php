@@ -47,23 +47,23 @@
     class="fixed pt-indent inset-0 overflow-y-auto px-indent-half z-modal-backdrop"
     style="display: none;"
 >
-    <div x-show="show" class="modal-backdrop transform transition-all"
+    <div x-show="show" class="modal-backdrop transform"
          x-on:click="show = false"
-         x-transition:enter="ease-out duration-300"
+         x-transition:enter="transition ease-out duration-300"
          x-transition:enter-start="opacity-0"
          x-transition:enter-end="opacity-100"
-         x-transition:leave="ease-in duration-200"
+         x-transition:leave="transition ease-in duration-200"
          x-transition:leave-start="opacity-100"
          x-transition:leave-end="opacity-0">
     </div>
 
-    <div x-show="show" class="mx-auto my-indent modal transform transition-all sm:w-full {{ $maxWidth }}"
-         x-transition:enter="ease-out duration-300"
-         x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-         x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-         x-transition:leave="ease-in duration-200"
-         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-         x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+    <div x-show="show" class="mx-auto my-indent modal transform sm:w-full {{ $maxWidth }}"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 sm:-translate-y-indent-double"
+         x-transition:enter-end="opacity-100 sm:translate-y-0"
+         x-transition:leave="transition ease-in duration-200"
+         x-transition:leave-start="opacity-100 sm:scale-100"
+         x-transition:leave-end="opacity-0 sm:scale-0">
         {{ $slot }}
     </div>
 </div>
