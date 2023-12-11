@@ -121,6 +121,7 @@ export default {
                 'outer-menu': "calc(100% - var(--menu-length))",
                 'nav': "calc(100% - var(--indent-width))",
                 'nav-full': "calc(100% - var(--menu-length) - var(--indent-double))",
+                'modal-aside': 'var(--modal-aside-width)',
             },
             zIndex: {
                 'dropdown': 'var(--z-dropdown)',

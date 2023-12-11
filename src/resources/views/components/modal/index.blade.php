@@ -1,4 +1,4 @@
-@props(['id', 'maxWidth'])
+@props(['id', 'maxWidth', 'type' => 'center'])
 
 @php
     $id = $id ?? md5($attributes->wire('model'));
@@ -10,6 +10,8 @@
         'xl' => 'sm:max-w-xl',
         '2xl' => 'sm:max-w-2xl',
     ][$maxWidth ?? '2xl'];
+
+    $type = in_array($type, ['center', 'aside']) ? $type : 'center';
 @endphp
 
 <div
@@ -57,13 +59,25 @@
          x-transition:leave-end="opacity-0">
     </div>
 
-    <div x-show="show" class="mx-auto my-indent modal transform sm:w-full {{ $maxWidth }}"
-         x-transition:enter="transition ease-out duration-300"
-         x-transition:enter-start="opacity-0 sm:-translate-y-indent-double"
-         x-transition:enter-end="opacity-100 sm:translate-y-0"
-         x-transition:leave="transition ease-in duration-200"
-         x-transition:leave-start="opacity-100 sm:scale-100"
-         x-transition:leave-end="opacity-0 sm:scale-0">
-        {{ $slot }}
-    </div>
+    @if ($type == "center")
+        <div x-show="show" class="mx-auto my-indent modal transform w-full {{ $maxWidth }}"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 sm:-translate-y-indent-double"
+             x-transition:enter-end="opacity-100 sm:translate-y-0"
+             x-transition:leave="transition ease-in duration-200"
+             x-transition:leave-start="opacity-100 sm:scale-100"
+             x-transition:leave-end="opacity-0 sm:scale-0">
+            {{ $slot }}
+        </div>
+    @else
+        <div x-show="show" class="aside-modal transform w-full xs:w-modal-aside"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 translate-x-modal-aside"
+             x-transition:enter-end="opacity-100 translate-x-0"
+             x-transition:leave="transition ease-in duration-200"
+             x-transition:leave-start="opacity-100 translate-x-0"
+             x-transition:leave-end="opacity-0 translate-x-modal-aside">
+            {{ $slot }}
+        </div>
+    @endif
 </div>

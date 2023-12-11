@@ -9,10 +9,16 @@ class ExampleModalsWire extends Component
     public $displayDelete = false;
     public $displayCustomDelete = false;
     public $displayDialog = false;
+    public $displayAside = false;
 
     public function render()
     {
         return view('tt::livewire.example-modals-wire');
+    }
+
+    public function showAside()
+    {
+        $this->displayAside = true;
     }
 
     public function showDelete()

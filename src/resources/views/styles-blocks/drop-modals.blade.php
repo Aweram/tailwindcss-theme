@@ -19,7 +19,7 @@
                         </x-tt::dropdown>
                     </div>
 
-                    <div class="col w-1/3">
+                    <div class="col w-2/3">
                         <livewire:tt-example-form />
                     </div>
                 </div>

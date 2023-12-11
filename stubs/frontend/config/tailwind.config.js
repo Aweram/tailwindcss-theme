@@ -77,6 +77,7 @@ export default {
                 'indent-half': 'var(--indent-half)',
                 'indent-double': 'var(--indent-double)',
                 'spacer': 'var(--indent-spacer)',
+                'modal-aside': 'var(--modal-aside-width)',
             },
             zIndex: {
                 'dropdown': 'var(--z-dropdown)',

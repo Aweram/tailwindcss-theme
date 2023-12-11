@@ -74,6 +74,8 @@
 
     --modal-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
+    --modal-aside-width: 420px;
+
     /* Dropdown */
     --dropdown-min-width: 10rem;
     --dropdown-padding-x: 0;
