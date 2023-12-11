@@ -8,6 +8,7 @@ class ExampleModalsWire extends Component
 {
     public $displayDelete = false;
     public $displayCustomDelete = false;
+    public $displayDialog = false;
 
     public function render()
     {
@@ -22,6 +23,11 @@ class ExampleModalsWire extends Component
     public function showCustomDelete()
     {
         $this->displayCustomDelete = true;
+    }
+
+    public function showDialog()
+    {
+        $this->displayDialog = true;
     }
 
     public function closeDelete()
