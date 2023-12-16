@@ -3,6 +3,7 @@
 namespace Aweram\TailwindcssTheme;
 
 use Aweram\TailwindcssTheme\Livewire\ExampleModalsWire;
+use Aweram\TailwindcssTheme\Livewire\ExampleUserPaginationWire;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 
@@ -20,6 +21,7 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
 
         // Livewire
         Livewire::component("tt-example-form", ExampleModalsWire::class);
+        Livewire::component("tt-example-pagination", ExampleUserPaginationWire::class);
     }
 
     /**
