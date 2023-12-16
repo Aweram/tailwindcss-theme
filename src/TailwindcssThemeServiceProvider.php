@@ -58,6 +58,11 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
                 __DIR__ . "/resources/views/layouts" => resource_path("views/vendor/tt/layouts")
             ], "layout-views");
 
+            // Публикация того что надо менять
+            $this->publishes([
+                __DIR__ . "/resources/views/changable" => resource_path("views/vendor/tt/changable")
+            ], "changable");
+
             // Публикация frontend
             $this->publishes([
                 __DIR__ . "/../stubs/frontend/config" => base_path(),

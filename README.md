@@ -6,6 +6,8 @@
 
     php artisan vendor:publish --provider="Aweram\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="images"
 
+    php artisan vendor:publish --provider="Aweram\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="changable"
+
 ### Auth
 
 In package presents views for authentication. You may install Laravel Fortify:
