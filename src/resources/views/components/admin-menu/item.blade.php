@@ -13,8 +13,10 @@
 @endphp
 
 @if ($hasChildren)
-    <li class="text-sm font-normal" x-data="{ expanded: {{ $active ? 'true' : 'false' }} }">
-        <a href="#" class="{{ $linkClass }}" @click="expanded = ! expanded">
+    <li class="text-sm font-normal" x-data="{ expanded: {{ $active ? 'true' : 'false' }}, activated: {{ $active ? 'true' : 'false' }} }">
+        <a href="#" class="{{ $linkClass }}"
+           :class="{ 'text-dark-hover bg-light': expanded || activated }"
+           @click="expanded = ! expanded">
             @isset($ico)
                 <span class="mr-indent-half">{{ $ico }}</span>
             @else
