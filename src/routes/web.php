@@ -9,7 +9,10 @@ if (config("tailwindcss-theme.showStylesPage")) {
     ], function () {
         Route::get(config("tailwindcss-theme.stylePageUrl"), function (Request $request) {
             $layout = $request->get("layout", "app");
-            return view("tt::choose-layout", ["layout" => $layout]);
+            return view("tt::choose-layout", [
+                "layout" => $layout,
+                "items" => \App\Models\User::query()->select("name", "email")->paginate(1)->appends(["layout" => $layout]),
+            ]);
         });
     });
 }
