@@ -1,6 +1,7 @@
 @switch($layout)
     @case("admin")
         <x-admin-layout>
+            <x-slot name="pageTitle">Page title</x-slot>
             @include("tt::styles")
         </x-admin-layout>
         @break
