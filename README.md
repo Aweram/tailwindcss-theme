@@ -21,7 +21,7 @@
 
 Что бы подключить стили, нужно заменить фалы проекта: `package.json`, `tailwind.config.js`, `vite.config.js`, `app.css`, `app.js`. Комманда заменит файлы и добавит новые:
 
-    php artisan vendor:publish --provider="Aweram\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="frontend"
+    php artisan vendor:publish --provider="Aweram\TailwindcssTheme\TailwindcssThemeServiceProvider" --tag="frontend" --force
 
 Для добавления изображений, которые есть в пакете:
 
