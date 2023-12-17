@@ -56,6 +56,7 @@ module.exports = plugin.withOptions(function (options = {}) {
         const components = {
             ".btn": {
                 display: 'inline-flex',
+                flexShrink: 0,
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexWrap: 'nowrap',
