@@ -36,6 +36,9 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
 
         // Подключение routes
         $this->loadRoutesFrom(__DIR__ . "/routes/web.php");
+
+        // Подключение переводов
+        $this->loadJsonTranslationsFrom(__DIR__ . "/lang");
     }
 
     /**

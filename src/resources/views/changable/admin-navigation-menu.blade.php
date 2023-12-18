@@ -20,7 +20,7 @@
                     <form method="post" action="{{ route('logout') }}" x-data>
                         @csrf
                         <a href="#" @click.prevent="$root.submit();" class="block px-indent-half hover:bg-light-hover">
-                            {{ __("Log Out") }}
+                            {{ __("Log out") }}
                         </a>
                     </form>
                 </x-slot>

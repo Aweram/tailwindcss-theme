@@ -8,6 +8,7 @@
     <title>{{ config('app.name', 'Laravel') }}@isset($title) - {{ $title }} @endisset</title>
 
     <!-- CSS -->
+    @livewireStyles
     @vite("resources/css/{$cssFile}")
 </head>
 <body>
@@ -41,6 +42,7 @@
 </div>
 
 <!-- Scripts -->
+@livewireScripts
 @vite('resources/js/admin.js')
 </body>
 </html>

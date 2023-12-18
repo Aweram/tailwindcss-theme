@@ -1,0 +1,19 @@
+{
+    "Log in": "Вход",
+    "Log out": "Выход",
+    "Authorization": "Авторизация",
+    "Password": "Пароль",
+    "Confirm password": "Подтверждение пароля",
+    "Reset password": "Восстановить пароль",
+    "Remember me": "Запомнить меня",
+    "Forgot your password?": "Забыли пароль?",
+    "Back to log in": "Обратно ко входу",
+    "Forgot password": "Восстановление пароля",
+    "Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.": "Забыли пароль? Не проблема. Просто напишите адрес своей электронной почты, и мы отправим Вам сообщение с ссылкой на восстановление пароля, где Вы сможете выбрать новый пароль",
+    "Send": "Отправить",
+    "Delete item": "Удалить элемент",
+    "Are you shure?": "Вы уверены?",
+    "It will be impossible to restore the item": "Будет невозможно восстановить элемент",
+    "Close": "Закрыть",
+    "Confirm": "Подтвердить"
+}

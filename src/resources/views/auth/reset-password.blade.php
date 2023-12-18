@@ -14,7 +14,7 @@
             <div>
                 <label for="email" class="inline-block mb-2">{{ __("Email") }}</label>
                 <input type="email" id="email" class="form-control" name="email"
-                       placeholder="john.doe@example.com" value="{{ old('email') }}" required autofocus>
+                       placeholder="john.doe@example.com" value="{{ old('email', $request->get("email")) }}" required autofocus>
             </div>
 
             <div>
@@ -29,7 +29,7 @@
                        autocomplete="new-password" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">{{ _("Reset password") }}</button>
+            <button type="submit" class="btn btn-primary">{{ __("Reset password") }}</button>
         </div>
     </form>
 </x-auth-layout>
