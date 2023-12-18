@@ -13,6 +13,6 @@ if (config("tailwindcss-theme.showStylesPage")) {
                 "layout" => $layout,
                 "items" => \App\Models\User::query()->select("name", "email")->paginate(1)->appends(["layout" => $layout]),
             ]);
-        });
+        })->name("styles");
     });
 }

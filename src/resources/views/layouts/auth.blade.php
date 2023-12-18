@@ -14,8 +14,10 @@
 <div class="flex flex-wrap w-full min-h-screen">
     <div class="absolute top-4 left-14 right-14 h-auto row items-end">
         <div class="col w-1/3 xs:w-1/2">
-            <img src="{{ asset("imgs/aweram/logo.png") }}" alt="Aweram" class="h-auto w-32 hidden xs:inline-block">
-            <img src="{{ asset("imgs/aweram/logo-short.png") }}" alt="Aweram" class="h-auto w-6 xs:hidden">
+            <a href="/">
+                <img src="{{ asset("imgs/aweram/logo.png") }}" alt="Aweram" class="h-auto w-32 hidden xs:inline-block">
+                <img src="{{ asset("imgs/aweram/logo-short.png") }}" alt="Aweram" class="h-auto w-6 xs:hidden">
+            </a>
         </div>
         <div class="col w-2/3 xs:w-1/2 text-right">
             @isset($route)
