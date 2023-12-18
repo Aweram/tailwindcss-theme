@@ -16,7 +16,7 @@
     <x-tt::admin.navigation />
     <x-tt::admin.aside-menu />
     <div class="transition-all duration-500 w-full px-indent-half xl:px-indent xl:ml-menu xl:w-outer-menu mt-24">
-        <div class="max-w-[1440px] mx-auto">
+        <div class="max-w-[1440px] mx-auto mb-indent">
             @isset($pageTitle)
                 <div class="mb-indent">
                     <h1 class="text-2xl text-dark">{{ $pageTitle }}</h1>
