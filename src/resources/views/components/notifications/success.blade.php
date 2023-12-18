@@ -1,5 +1,8 @@
 @if (session('success'))
-    <div class="font-semibold text-sm text-success p-indent-half rounded-lg bg-success/25">
-        {{ session('success') }}
+    <div class="font-semibold text-sm text-success p-indent-half rounded-lg bg-success/25 flex justify-between items-center" x-data="{}">
+        <span>{{ session('success') }}</span>
+        <button type="button" class="px-indent-half" @click="$root.remove()">
+            <x-tt::ico.cross class="text-dark hover:text-dark-hover" />
+        </button>
     </div>
 @endif
