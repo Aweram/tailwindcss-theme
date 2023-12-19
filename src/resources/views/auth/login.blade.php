@@ -20,7 +20,7 @@
             </div>
 
             <div class="form-check">
-                <input type="checkbox" id="remember" class="form-check-input" value="{{ old('remember') }}">
+                <input type="checkbox" id="remember" class="form-check-input" name="remember" {{ old("remember") == 'on' ? 'checked' : '' }}>
                 <label for="remember" class="form-check-label">{{ __('Remember me') }}</label>
             </div>
 
