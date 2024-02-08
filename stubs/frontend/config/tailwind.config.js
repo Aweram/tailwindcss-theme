@@ -70,6 +70,7 @@ export default {
             spacing: {
                 "btn-ico-text": 'var(--btn-ico-text-space)',
                 "btn-x-ico": 'var(--btn-padding-x-ico)',
+                "btn-x": 'var(--btn-padding-x)',
                 'indent-xs': 'var(--indent-xs)',
                 'indent-sm': 'var(--indent-sm)',
                 'indent': 'var(--indent-width)',
