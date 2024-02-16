@@ -13,12 +13,12 @@ export default {
         container: {
             center: true,
             padding: {
-                DEFAULT: '.75rem',
-                sm: '3.125rem',
-                md: '2.25rem',
-                lg: '2.75rem',
-                xl: '3.25rem',
-                '2xl': '4rem'
+                DEFAULT: '.75rem', // 12px
+                sm: '3.125rem', // 50px
+                md: '2.25rem', // 36px
+                lg: '2.75rem', // 44px
+                xl: '3.25rem', //52px
+                '2xl': '3rem' // 64px
             }
         },
 
@@ -26,10 +26,6 @@ export default {
             'xs': "480px", // => @media (min-width: 480px) {...}
 
             ...defaultTheme.screens
-        },
-
-        flex: {
-            '0': '0 0 auto',
         },
 
         colors: {
@@ -86,7 +82,10 @@ export default {
                 'fixed': 'var(--z-sticky)',
                 'modal-backdrop': 'var(--z-modal-backdrop)',
                 'modal': 'var(--z-modal)',
-            }
+            },
+            flex: {
+                '0': '0 0 auto',
+            },
         },
     },
     plugins: [

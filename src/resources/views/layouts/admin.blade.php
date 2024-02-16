@@ -10,6 +10,7 @@
     <!-- CSS -->
     @livewireStyles
     @vite("resources/css/{$cssFile}")
+    @stack("styles")
 </head>
 <body>
 <main x-data="{ menuIsOpen: false, isInit: false }" x-init="isInit = true">
@@ -35,5 +36,6 @@
 <!-- Scripts -->
 @livewireScripts
 @vite('resources/js/admin.js')
+@stack("scripts")
 </body>
 </html>

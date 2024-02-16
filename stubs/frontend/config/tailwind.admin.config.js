@@ -8,7 +8,8 @@ export default {
         "./resources/css/admin.css",
 
         "./vendor/aweram/tailwindcss-theme/src/resources/views/**/*.blade.php",
-        "./vendor/aweram/user-management/src/resources/views/**/*.blade.php"
+        "./vendor/aweram/user-management/src/resources/views/**/*.blade.php",
+        "./vendor/aweram/fileable/src/resources/views/**/*.blade.php"
     ],
     theme: {
         container: {
@@ -19,7 +20,7 @@ export default {
                 md: '2.25rem',
                 lg: '2.75rem',
                 xl: '3.25rem',
-                '2xl': '4rem'
+                '2xl': '3rem'
             }
         },
 
@@ -27,10 +28,6 @@ export default {
             'xs': "480px", // => @media (min-width: 480px) {...}
 
             ...defaultTheme.screens
-        },
-
-        flex: {
-            '0': '0 0 auto',
         },
 
         colors: {
@@ -133,7 +130,10 @@ export default {
                 'admin-menu': 'var(--z-admin-menu)',
                 'modal-backdrop': 'var(--z-modal-backdrop)',
                 'modal': 'var(--z-modal)',
-            }
+            },
+            flex: {
+                '0': '0 0 auto',
+            },
         },
     },
     plugins: [
