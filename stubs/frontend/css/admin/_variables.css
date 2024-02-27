@@ -201,6 +201,8 @@
 
     --btn-font-weight: 500;
 
+    --btn-letter-spacing: 0.1em;
+
     --btn-border-width: var(--input-border-width);
     --btn-border-radius: var(--input-border-radius); /* 10px */
 

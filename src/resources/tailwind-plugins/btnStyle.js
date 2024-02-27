@@ -74,7 +74,7 @@ module.exports = plugin.withOptions(function (options = {}) {
                 fontSize: 'var(--btn-font-size)',
                 lineHeight: 'var(--btn-line-height)',
                 fontWeight: 'var(--btn-font-weight)',
-                letterSpacing: '0.1em',
+                letterSpacing: 'var(--btn-letter-spacing)',
 
                 "&:disabled": {
                     opacity: "0.25",
