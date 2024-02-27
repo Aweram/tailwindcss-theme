@@ -20,6 +20,14 @@ class AppLayout extends Component
      */
     public function render()
     {
-        return view('tt::layouts.app');
+        return view('tt::layouts.app', $this->getVariables());
+    }
+
+    private function getVariables(): array
+    {
+        return [
+            "baseClasses" => config("tailwindcss-theme.baseAppCoverLayoutClasses"),
+            "htmlClasses" => config("tailwindcss-theme.baseAppHtmlLayoutClasses"),
+        ];
     }
 }
