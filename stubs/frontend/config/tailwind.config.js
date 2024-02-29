@@ -8,6 +8,7 @@ export default {
         "./resources/css/app.css",
 
         "./vendor/aweram/tailwindcss-theme/src/resources/views/**/*.blade.php",
+        "./vendor/aweram/tailwindcss-theme/src/config/tailwindcss-theme.php",
     ],
     theme: {
         container: {

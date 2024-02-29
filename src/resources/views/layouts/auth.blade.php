@@ -10,6 +10,7 @@
     <!-- CSS -->
     @livewireStyles
     @vite("resources/css/{$cssFile}")
+    @stack("styles")
 </head>
 <body>
 <div class="flex flex-wrap w-full min-h-screen">
@@ -44,5 +45,6 @@
 <!-- Scripts -->
 @livewireScripts
 @vite('resources/js/admin.js')
+@stack("scripts")
 </body>
 </html>

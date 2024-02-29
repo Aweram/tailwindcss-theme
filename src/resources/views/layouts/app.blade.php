@@ -14,6 +14,7 @@
     <!-- CSS -->
     @livewireStyles
     @vite("resources/css/{$cssFile}")
+    @stack("styles")
 </head>
 <body class="app">
 <div class="{{ $baseClasses }}">
@@ -23,5 +24,6 @@
 <!-- Scripts -->
 @livewireScripts
 @vite('resources/js/app.js')
+@stack("scripts")
 </body>
 </html>
