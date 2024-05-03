@@ -17,9 +17,10 @@
     @stack("styles")
 </head>
 <body class="app">
-<div class="{{ $baseClasses }}">
-    {{ $slot }}
-</div>
+
+@include("tt::layouts.includes.before-content")
+@include("tt::layouts.includes.main-content")
+@include("tt::layouts.includes.after-content")
 
 <!-- Scripts -->
 @livewireScripts
