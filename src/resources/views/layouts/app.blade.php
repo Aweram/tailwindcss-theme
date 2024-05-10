@@ -11,6 +11,15 @@
         <title>{{ config('app.name', 'Laravel') }}@isset($title) - {{ $title }} @endisset</title>
     @endif
 
+    {{-- Meta --}}
+    <meta content="{{ isset($pageTitle) ?? config('app.name', 'Laravel') }}" property="og:title">
+    @isset($pageDescription)
+        <meta name="description" content="{{ $pageDescription }}">
+    @endisset
+
+    {{-- Favico --}}
+    <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon">
+
     <!-- CSS -->
     @livewireStyles
     @vite("resources/css/{$cssFile}")
