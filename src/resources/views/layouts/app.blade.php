@@ -12,7 +12,7 @@
     @endif
 
     {{-- Meta --}}
-    <meta content="{{ isset($pageTitle) ?? config('app.name', 'Laravel') }}" property="og:title">
+    <meta content="{{ isset($pageTitle) ? $pageTitle : config('app.name', 'Laravel') }}" property="og:title">
     @isset($pageDescription)
         <meta name="description" content="{{ $pageDescription }}">
     @endisset
