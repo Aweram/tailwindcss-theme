@@ -3,7 +3,7 @@
     <div class="px-indent-half mb-indent">
         <a href="{{ \Illuminate\Support\Facades\Route::has('home') ? route('home') : '/' }}"
            class="pl-indent-half mb-indent py-indent block border-b border-bottom border-secondary/40">
-            <img src="{{ asset("imgs/aweram/logo.png") }}" alt="Aweram" class="h-auto w-32 hidden xs:inline-block">
+            <img src="{{ asset("imgs/aweram/logo.png") }}" alt="Aweram" class="h-auto w-32">
         </a>
     </div>
     <x-tt::admin-menu />
