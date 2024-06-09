@@ -5,6 +5,7 @@
     <form action="{{ route('login') }}" method="post">
         @csrf
         <div class="space-y-indent-half">
+            <x-tt::notifications.error />
             <x-tt::form.status />
             <x-tt::form.validation-errors />
 
