@@ -1,6 +1,4 @@
-@props([
-    "name" => ''
-])
+@props(["name" => ''])
 @error($name)
     <div {{ $attributes->merge(["class" => "text-sm text-danger"]) }}>
         {{ $message }}
