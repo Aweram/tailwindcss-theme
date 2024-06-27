@@ -1,7 +1,7 @@
 @props(['id', 'maxWidth', 'type' => 'center', 'event' => null])
 
 @php
-    $id = $id ?? md5($attributes->wire('model'));
+    $modalId = $id ?? md5($attributes->wire('model'));
 
     $maxWidth = [
         'sm' => 'sm:max-w-sm',
@@ -13,12 +13,12 @@
 
     $type = in_array($type, ['center', 'aside']) ? $type : 'center';
 
-    $showText = $id ? 'false' : '@entangle($attributes->wire("model")).live';
+    $showText = $id ? 'false' : "";
 @endphp
 
 <div
     x-data="{
-        show: {{ $showText }},
+        show: @if ($id) 'false' @else @entangle($attributes->wire('model')).live @endif,
         focusables() {
             // All focusable element types...
             let selector = 'a, button, input:not([type=\'hidden\']), textarea, select, details, [tabindex]:not([tabindex=\'-1\'])'
@@ -48,7 +48,7 @@
     x-on:keydown.tab.prevent="$event.shiftKey || nextFocusable().focus()"
     x-on:keydown.shift.tab.prevent="prevFocusable().focus()"
     x-show="show"
-    id="{{ $id }}"
+    id="{{ $modalId }}"
     class="fixed pt-indent inset-0 overflow-y-auto px-indent-half z-modal-backdrop"
     style="display: none;"
 >
