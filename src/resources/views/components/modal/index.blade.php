@@ -18,7 +18,7 @@
 
 <div
     x-data="{
-        show: @if ($id) 'false' @else @entangle($attributes->wire('model')).live @endif,
+        show: @if ($id) false @else @entangle($attributes->wire('model')).live @endif,
         focusables() {
             // All focusable element types...
             let selector = 'a, button, input:not([type=\'hidden\']), textarea, select, details, [tabindex]:not([tabindex=\'-1\'])'
