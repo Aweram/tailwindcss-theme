@@ -33,6 +33,7 @@
 @include("tt::layouts.includes.main-content")
 @include("tt::layouts.includes.after-content")
 
+@stack("modals")
 <!-- Scripts -->
 @livewireScripts
 @vite('resources/js/app.js')
