@@ -1,4 +1,4 @@
-@props(['id', 'maxWidth', 'type' => 'center'])
+@props(['id', 'maxWidth', 'type' => 'center', 'event' => null])
 
 @php
     $id = $id ?? md5($attributes->wire('model'));
@@ -12,11 +12,13 @@
     ][$maxWidth ?? '2xl'];
 
     $type = in_array($type, ['center', 'aside']) ? $type : 'center';
+
+    $showText = $id ? 'false' : '@entangle($attributes->wire("model")).live';
 @endphp
 
 <div
     x-data="{
-        show: @entangle($attributes->wire('model')).live,
+        show: {{ $showText }},
         focusables() {
             // All focusable element types...
             let selector = 'a, button, input:not([type=\'hidden\']), textarea, select, details, [tabindex]:not([tabindex=\'-1\'])'
@@ -40,6 +42,7 @@
             document.body.classList.remove('overflow-y-hidden');
         }
     })"
+    @if ($event) x-on:{{ $event }}.window="show = true" @endif
     x-on:close.stop="show = false"
     x-on:keydown.escape.window="show = false"
     x-on:keydown.tab.prevent="$event.shiftKey || nextFocusable().focus()"

@@ -1,6 +1,6 @@
-@props(['id' => null, 'maxWidth' => null])
+@props(['id' => null, 'maxWidth' => null, 'event' => null])
 
-<x-tt::modal :id="$id" :maxWidth="$maxWidth" {{ $attributes }}>
+<x-tt::modal :id="$id" :event="$event" :maxWidth="$maxWidth" {{ $attributes }}>
     @isset($title)
         <div class="text-base px-indent py-indent-half bg-light flex justify-between items-center">
             {{ $title }}
