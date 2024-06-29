@@ -45,7 +45,7 @@
                                     @if ($page == $paginator->currentPage())
                                         <span class="hidden md:inline-flex items-center justify-center min-w-[2rem] px-1.5 py-1.5 rounded-full bg-primary text-white">{{ $page }}</span>
                                     @else
-                                        <button wire:click="gotoPage({{ $page }}, '{{ $paginator->getPageName() }}')"
+                                        <button wire:click="gotoPage({{ $page }}, '{{ $paginator->getPageName() }}')" x-on:click="{{ $scrollIntoViewJsSnippet }}"
                                                 class="hidden md:inline-flex items-center justify-center min-w-[2rem] px-1.5 py-1.5 hover:text-secondary">
                                             {{ $page }}
                                         </button>
