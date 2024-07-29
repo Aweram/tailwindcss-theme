@@ -8,12 +8,14 @@
     @if (empty($rawMeta))
         @if(! empty($rawTitle))
             <title>{{ $rawTitle }}</title>
+            <meta content="{{ $rawTitle }}" property="og:title">
         @else
             <title>{{ config('app.name', 'Laravel') }}@isset($title) - {{ $title }} @endisset</title>
+            <meta content="{{ config('app.name', 'Laravel') }}@isset($title) - {{ $title }} @endisset" property="og:title">
         @endif
-        <meta content="{{ isset($pageTitle) ? $pageTitle : config('app.name', 'Laravel') }}" property="og:title">
         @isset($pageDescription)
             <meta name="description" content="{{ $pageDescription }}">
+            <meta  property="og:description" content="{{ $pageDescription }}">
         @endisset
     @else
         {{ $rawMeta }}
