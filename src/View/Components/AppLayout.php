@@ -23,7 +23,7 @@ class AppLayout extends Component
         return view('tt::layouts.app', $this->getVariables());
     }
 
-    private function getVariables(): array
+    protected function getVariables(): array
     {
         return [
             "baseClasses" => config("tailwindcss-theme.baseAppCoverLayoutClasses"),
