@@ -2,6 +2,7 @@
 
 namespace Aweram\TailwindcssTheme;
 
+use Aweram\TailwindcssTheme\Livewire\ChangeUserPasswordWire;
 use Aweram\TailwindcssTheme\Livewire\ExampleModalsWire;
 use Aweram\TailwindcssTheme\Livewire\ExampleUserPaginationWire;
 use Illuminate\Support\ServiceProvider;
@@ -22,6 +23,10 @@ class TailwindcssThemeServiceProvider extends ServiceProvider
         // Livewire
         Livewire::component("tt-example-form", ExampleModalsWire::class);
         Livewire::component("tt-example-pagination", ExampleUserPaginationWire::class);
+        Livewire::component(
+            "tt-change-user-password",
+            config("tailwindcss-theme.customUserChangePasswordComponent") ?? ChangeUserPasswordWire::class
+        );
     }
 
     /**

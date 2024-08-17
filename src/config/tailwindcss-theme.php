@@ -14,5 +14,7 @@ return [
     "authJsFile" => "admin.js",
 
     "baseAppCoverLayoutClasses" => "font-sans text-body antialiased",
-    "baseAppHtmlLayoutClasses" => "text-body font-normal bg-body-bg scroll-smooth"
+    "baseAppHtmlLayoutClasses" => "text-body font-normal bg-body-bg scroll-smooth",
+
+    "customUserChangePasswordComponent" => null,
 ];

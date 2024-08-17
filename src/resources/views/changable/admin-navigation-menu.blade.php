@@ -17,6 +17,10 @@
                     </button>
                 </x-slot>
                 <x-slot name="content">
+                    <button type="button" x-data @click="$dispatch('show-user-change-password')"
+                            class="block px-indent-half hover:bg-light-hover text-nowrap">
+                        {{ __("Change password") }}
+                    </button>
                     <form method="post" action="{{ route('logout') }}" x-data>
                         @csrf
                         <a href="#" @click.prevent="$root.submit();" class="block px-indent-half hover:bg-light-hover">
@@ -28,3 +32,7 @@
         </li>
     @endauth
 </ul>
+
+@push("modals")
+    <livewire:tt-change-user-password />
+@endpush

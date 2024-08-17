@@ -33,6 +33,7 @@
     </div>
 </main>
 
+@stack("modals")
 <!-- Scripts -->
 @livewireScripts
 @vite('resources/js/admin.js')

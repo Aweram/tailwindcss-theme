@@ -13,7 +13,10 @@
     "Send": "Отправить",
     "Delete item": "Удалить элемент",
     "Are you shure?": "Вы уверены?",
+    "Are you sure?": "Вы уверены?",
     "It will be impossible to restore the item": "Будет невозможно восстановить элемент",
     "Close": "Закрыть",
-    "Confirm": "Подтвердить"
+    "Confirm": "Подтвердить",
+    "Change password": "Изменить пароль",
+    "Password has been changed": "Пароль был изменен"
 }
