@@ -82,6 +82,15 @@ module.exports = plugin.withOptions(function (options = {}) {
                 }
             },
 
+            ".btn-base": {
+                height: 'var(--btn-height)',
+                minWidth: 'var(--btn-height)',
+                fontSize: 'var(--btn-font-size)',
+                lineHeight: 'var(--btn-line-height)',
+                paddingLeft: 'var(--btn-padding-x)',
+                paddingRight: 'var(--btn-padding-x)',
+            },
+
             ".btn-lg": {
                 height: 'var(--btn-height-lg)',
                 minWidth: 'var(--btn-height-lg)',
