@@ -1,6 +1,6 @@
-@props(['id' => null, 'event' => null])
-
-<x-tt::modal :id="$id" :event="$event" type="aside" {{ $attributes }}>
+@props(['id' => null, 'event' => null, 'direction' => 'right'])
+@php($type = 'aside-' . $direction)
+<x-tt::modal :id="$id" :event="$event" :type="$type" {{ $attributes }}>
     @isset($title)
         <div class="text-lg font-medium px-indent py-indent flex justify-between items-center">
             {{ $title }}

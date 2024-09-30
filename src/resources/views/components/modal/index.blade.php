@@ -11,7 +11,7 @@
         '2xl' => 'sm:max-w-2xl',
     ][$maxWidth ?? '2xl'];
 
-    $type = in_array($type, ['center', 'aside']) ? $type : 'center';
+    $type = in_array($type, ['center', 'aside-right', 'aside-left']) ? $type : 'center';
 
     $showText = $id ? 'false' : "";
 @endphp
@@ -42,7 +42,7 @@
             document.body.classList.remove('overflow-y-hidden');
         }
     })"
-    @if ($event) x-on:{{ $event }}.window="show = true" @endif
+    @if ($event) x-on:{{ $event }}.window="show = !show" @endif
     x-on:close.stop="show = false"
     x-on:keydown.escape.window="show = false"
     x-on:keydown.tab.prevent="$event.shiftKey || nextFocusable().focus()"
@@ -62,25 +62,42 @@
          x-transition:leave-end="opacity-0">
     </div>
 
-    @if ($type == "center")
-        <div x-show="show" class="mx-auto my-indent modal transform w-full {{ $maxWidth }} overflow-auto beautify-scrollbar"
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="opacity-0 sm:-translate-y-indent-double"
-             x-transition:enter-end="opacity-100 sm:translate-y-0"
-             x-transition:leave="transition ease-in duration-200"
-             x-transition:leave-start="opacity-100 sm:scale-100"
-             x-transition:leave-end="opacity-0 sm:scale-0">
-            {{ $slot }}
-        </div>
-    @else
-        <div x-show="show" class="aside-modal transform w-full xs:w-modal-aside overflow-auto beautify-scrollbar"
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="opacity-0 translate-x-modal-aside"
-             x-transition:enter-end="opacity-100 translate-x-0"
-             x-transition:leave="transition ease-in duration-200"
-             x-transition:leave-start="opacity-100 translate-x-0"
-             x-transition:leave-end="opacity-0 translate-x-modal-aside">
-            {{ $slot }}
-        </div>
-    @endif
+    @switch($type)
+        @case('aside-right')
+            <div x-show="show" class="aside-modal right-0 transform w-full xs:w-modal-aside overflow-auto beautify-scrollbar"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 translate-x-modal-aside"
+                 x-transition:enter-end="opacity-100 translate-x-0"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100 translate-x-0"
+                 x-transition:leave-end="opacity-0 translate-x-modal-aside">
+                {{ $slot }}
+            </div>
+            @break
+
+        @case('aside-left')
+            <div x-show="show" class="aside-modal left-0 transform w-full xs:w-modal-aside overflow-auto beautify-scrollbar"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 -translate-x-modal-aside"
+                 x-transition:enter-end="opacity-100 translate-x-0"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100 translate-x-0"
+                 x-transition:leave-end="opacity-0 -translate-x-modal-aside">
+                {{ $slot }}
+            </div>
+            @break
+
+        @default
+            <div x-show="show" class="mx-auto my-indent modal transform w-full {{ $maxWidth }} overflow-auto beautify-scrollbar"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 sm:-translate-y-indent-double"
+                 x-transition:enter-end="opacity-100 sm:translate-y-0"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100 sm:scale-100"
+                 x-transition:leave-end="opacity-0 sm:scale-0">
+                {{ $type }}
+                {{ $slot }}
+            </div>
+            @break
+    @endswitch
 </div>
