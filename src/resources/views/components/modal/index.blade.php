@@ -95,7 +95,6 @@
                  x-transition:leave="transition ease-in duration-200"
                  x-transition:leave-start="opacity-100 sm:scale-100"
                  x-transition:leave-end="opacity-0 sm:scale-0">
-                {{ $type }}
                 {{ $slot }}
             </div>
             @break
