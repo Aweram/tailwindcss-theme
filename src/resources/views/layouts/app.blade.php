@@ -23,11 +23,12 @@
 
     {{-- Favico --}}
     <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon">
-    @include("tt::layouts.includes.under-css")
+    @include("tt::layouts.includes.over-css")
     <!-- CSS -->
     @livewireStyles
     @vite("resources/css/{$cssFile}")
     @stack("styles")
+    @include("tt::layouts.includes.under-css")
 </head>
 <body class="app">
 
