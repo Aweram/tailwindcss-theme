@@ -39,14 +39,38 @@ export default {
             body: 'rgba(var(--color-body), <alpha-value>)',
             "body-bg": 'rgba(var(--color-body-bg), <alpha-value>)',
             // theme colors
-            light: 'rgba(var(--color-light), <alpha-value>)',
-            dark: 'rgba(var(--color-dark), <alpha-value>)',
-            success: 'rgba(var(--color-success), <alpha-value>)',
-            danger: 'rgba(var(--color-danger), <alpha-value>)',
-            warning: 'rgba(var(--color-warning), <alpha-value>)',
-            info: 'rgba(var(--color-info), <alpha-value>)',
-            primary: 'rgba(var(--color-primary), <alpha-value>)',
-            secondary: 'rgba(var(--color-secondary), <alpha-value>)',
+            light: {
+                DEFAULT: 'rgba(var(--color-light), <alpha-value>)',
+                hover: 'rgba(var(--color-light-hover), <alpha-value>)'
+            },
+            dark: {
+                DEFAULT: 'rgba(var(--color-dark), <alpha-value>)',
+                hover: 'rgba(var(--color-dark-hover), <alpha-value>)'
+            },
+            success: {
+                DEFAULT: 'rgba(var(--color-success), <alpha-value>)',
+                hover: 'rgba(var(--color-success-hover), <alpha-value>)'
+            },
+            danger: {
+                DEFAULT: 'rgba(var(--color-danger), <alpha-value>)',
+                hover: 'rgba(var(--color-danger-hover), <alpha-value>)'
+            },
+            warning: {
+                DEFAULT: 'rgba(var(--color-warning), <alpha-value>)',
+                hover: 'rgba(var(--color-warning-hover), <alpha-value>)'
+            },
+            info: {
+                DEFAULT: 'rgba(var(--color-info), <alpha-value>)',
+                hover: 'rgba(var(--color-info-hover), <alpha-value>)'
+            },
+            primary: {
+                DEFAULT: 'rgba(var(--color-primary), <alpha-value>)',
+                hover: 'rgba(var(--color-primary-hover), <alpha-value>)'
+            },
+            secondary: {
+                DEFAULT: 'rgba(var(--color-secondary), <alpha-value>)',
+                hover: 'rgba(var(--color-secondary-hover), <alpha-value>)'
+            },
         },
 
         themeColors: {

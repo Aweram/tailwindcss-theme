@@ -1,13 +1,28 @@
 :root {
     /* Colors */
     --color-light: 248, 249, 250; /* #F8F9FA */
+    --color-light-hover: 211, 212, 213; /* #d3d4d5 */
+
     --color-dark: 33, 37, 41; /* #212529 */
+    --color-dark-hover: 66, 70, 73; /* #424649 */
+
     --color-success: 25, 135, 84; /* #198754 */
+    --color-success-hover: 21, 115, 71; /* #157347 */
+
     --color-danger: 220, 53, 69; /* #dc3545 */
+    --color-danger-hover: 187, 45, 59; /* #bb2d3b */
+
     --color-warning: 255, 193, 7; /* #ffc107 */
+    --color-warning-hover: 255, 202, 44; /* #ffca2c */
+
     --color-info: 13, 202, 240; /* #0dcaf0 */
+    --color-info-hover: 49, 210, 242; /* #31d2f2 */
+
     --color-primary: 13, 110, 253; /* #0d6efd */
+    --color-primary-hover: 13, 110, 252; /* #0d6efc */
+
     --color-secondary: 108, 117, 125; /* #6c757d */
+    --color-secondary-hover: 92, 99, 106; /* #5c636a */
 
     --color-body: 33, 37, 41; /* #212529 */ /* Еще передается вручную в svg для form-select */
     --color-body-bg: var(--color-light);
