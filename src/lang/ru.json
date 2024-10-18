@@ -18,5 +18,21 @@
     "Close": "Закрыть",
     "Confirm": "Подтвердить",
     "Change password": "Изменить пароль",
-    "Password has been changed": "Пароль был изменен"
+    "Password has been changed": "Пароль был изменен",
+    "Address bar": "Адресная строка",
+    "Short description": "Краткое описание",
+    "Type": "Тип",
+    "Value": "Значение",
+    "Values": "Значения",
+    "Image": "Изображение",
+    "Any publication": "Любая публикация",
+    "Published": "Опубликованы",
+    "Removed from publication": "Сняты с публикации",
+    "Description": "Описание",
+    "Created at": "Дата создания",
+    "Actions": "Действия",
+    "Viewing": "Просмотр",
+    "Empty": "Пусто",
+    "Yes": "Да",
+    "No": "Нет"
 }
