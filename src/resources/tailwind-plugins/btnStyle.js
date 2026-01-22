@@ -61,6 +61,7 @@ module.exports = plugin.withOptions(function (options = {}) {
                 alignItems: 'center',
                 flexWrap: 'nowrap',
                 transition: 'var(--btn-transition)',
+                cursor: 'pointer',
 
                 borderWidth: 'var(--btn-border-width)',
                 borderRadius: 'var(--btn-border-radius)',
@@ -78,7 +79,8 @@ module.exports = plugin.withOptions(function (options = {}) {
 
                 "&:disabled": {
                     opacity: "0.25",
-                    pointerEvents: "none"
+                    pointerEvents: "none",
+                    cursor: 'default'
                 }
             },
 
