@@ -1,6 +1,6 @@
 <?php
 
-namespace GIS\TailwindcssTheme\View\Components;
+namespace Aweram\TailwindcssTheme\View\Components;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\View\Component;
