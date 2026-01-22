@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
+use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\Attributes\On;
 
@@ -23,7 +24,7 @@ class ChangeUserPasswordWire extends Component
         ];
     }
 
-    public function render()
+    public function render(): View
     {
         return view('tt::livewire.change-user-password-wire');
     }

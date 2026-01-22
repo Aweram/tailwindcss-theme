@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap');
 @import "./admin/_variables.css";
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @config "../../tailwind.admin.config.js";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@theme {
+    --breakpoint-xs: 30rem; /* => @media (min-width: 480px) {...} */
+
+    /* Border radius */
+    --radius-base: var(--border-radius)
+}
+
+@utility container {
+    padding-inline: .75rem; /* 12px */
+    margin-inline: auto;
+
+    @variant sm {  padding-inline: 3.125rem; /* 50px */  }
+    @variant md {  padding-inline: 2.25rem; /* 36px */  }
+    @variant lg {  padding-inline: 2.75rem; /* 44px */  }
+    @variant xl {  padding-inline: 3.25rem; /* 52px */  }
+    @variant 2xl {  padding-inline: 3rem; /* 64px */  }
+}
 
 @layer base {
     h1, h1, h3, h4, h5, h6 {

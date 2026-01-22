@@ -2,56 +2,57 @@
 
 namespace Aweram\TailwindcssTheme\Livewire;
 
+use Illuminate\View\View;
 use Livewire\Component;
 
 class ExampleModalsWire extends Component
 {
-    public $displayDelete = false;
-    public $displayCustomDelete = false;
-    public $displayDialog = false;
-    public $displayAside = false;
+    public bool $displayDelete = false;
+    public bool $displayCustomDelete = false;
+    public bool $displayDialog = false;
+    public bool $displayAside = false;
 
-    public function render()
+    public function render(): View
     {
         return view('tt::livewire.example-modals-wire');
     }
 
-    public function showAside()
+    public function showAside(): void
     {
         $this->displayAside = true;
     }
 
-    public function showDelete()
+    public function showDelete(): void
     {
         $this->displayDelete = true;
     }
 
-    public function showCustomDelete()
+    public function showCustomDelete(): void
     {
         $this->displayCustomDelete = true;
     }
 
-    public function showDialog()
+    public function showDialog(): void
     {
         $this->displayDialog = true;
     }
 
-    public function closeDelete()
+    public function closeDelete(): void
     {
         $this->displayDelete = false;
     }
 
-    public function closeCustomDelete()
+    public function closeCustomDelete(): void
     {
         $this->displayCustomDelete = false;
     }
 
-    public function confirmDelete()
+    public function confirmDelete(): void
     {
         $this->displayDelete = false;
     }
 
-    public function confirmCustomDelete()
+    public function confirmCustomDelete(): void
     {
         $this->displayCustomDelete = false;
     }

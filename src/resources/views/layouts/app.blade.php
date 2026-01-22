@@ -23,6 +23,7 @@
 
     {{-- Favico --}}
     <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon">
+    @stack("js-lib")
     @include("tt::layouts.includes.over-css")
     <!-- CSS -->
     @livewireStyles
@@ -36,10 +37,11 @@
 @include("tt::layouts.includes.main-content")
 @include("tt::layouts.includes.after-content")
 
+@includeIf("pp::web.cookies.component")
 @stack("modals")
 <!-- Scripts -->
 @livewireScripts
-@vite('resources/js/app.js')
+@vite("resources/js/{$jsFile}")
 @stack("scripts")
 @include("tt::layouts.includes.after-scripts")
 </body>

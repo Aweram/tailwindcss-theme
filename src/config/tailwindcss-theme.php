@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "showStylesPage" => true,
+    "showStylesPage" => env("SHOW_STYLES_PAGE", false),
     "stylePageUrl" => "/styles",
 
     "appCssFile" => "app.css",

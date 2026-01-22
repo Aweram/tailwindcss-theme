@@ -10,6 +10,7 @@ module.exports = plugin.withOptions(function (options = {}) {
             },
 
             '.modal': {
+                position: 'relative',
                 backgroundColor: 'rgba(var(--modal-bg), 1)',
                 backgroundClip: 'border-box',
 

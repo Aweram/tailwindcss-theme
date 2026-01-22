@@ -1,16 +1,18 @@
 <?php
 
-namespace Aweram\TailwindcssTheme\View\Components;
+namespace GIS\TailwindcssTheme\View\Components;
 
 use Illuminate\View\Component;
 
 class AdminLayout extends Component
 {
-    public $cssFile;
+    public string $cssFile;
+    public string $jsFile;
 
     public function __construct()
     {
         $this->cssFile = config("tailwindcss-theme.adminCssFile");
+        $this->jsFile = config("tailwindcss-theme.adminJsFile");
     }
 
     /**

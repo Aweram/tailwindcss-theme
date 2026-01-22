@@ -7,6 +7,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}@isset($title) - {{ $title }} @endisset</title>
 
+    {{-- Favico --}}
+    <link rel="shortcut icon" href="{{ asset("favicon.ico") }}" type="image/x-icon">
+    @stack("js-lib")
     <!-- CSS -->
     @livewireStyles
     @vite("resources/css/{$cssFile}")
@@ -36,7 +39,7 @@
 @stack("modals")
 <!-- Scripts -->
 @livewireScripts
-@vite('resources/js/admin.js')
+@vite("resources/js/{$jsFile}")
 @stack("scripts")
 </body>
 </html>

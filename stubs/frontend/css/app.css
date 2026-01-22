@@ -1,7 +1,50 @@
-@import url('https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import "./app/_variables.css";
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @config "../../tailwind.config.js";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@theme {
+    --breakpoint-xs: 30rem; /* => @media (min-width: 480px) {...} */
+
+    /* Font size */
+    --text-h1: var(--h1-size);
+    --text-h1--line-height: var(--h1-line);
+    --text-h1-mobile: var(--h1-mobile);
+    --text-h1-mobile--line-height: var(--h1-line);
+
+    --text-h2: var(--h2-size);
+    --text-h2--line-height: var(--h2-line);
+    --text-h2-mobile: var(--h2-mobile);
+    --text-h2-mobile--line-height: var(--h2-line);
+
+    --text-h3: var(--h3-size);
+    --text-h3--line-height: var(--h3-line);
+    --text-h3-mobile: var(--h3-mobile);
+    --text-h3-mobile--line-height: var(--h3-line);
+
+    --text-h4: var(--h4-size);
+    --text-h4--line-height: var(--h4-line);
+    --text-h4-mobile: var(--h4-mobile);
+    --text-h4-mobile--line-height: var(--h4-line);
+
+    --text-h5: var(--h5-size);
+    --text-h5--line-height: var(--h5-line);
+    --text-h5-mobile: var(--h5-mobile);
+    --text-h5-mobile--line-height: var(--h5-line);
+
+    /* Border radius */
+    --radius-base: var(--border-radius)
+}
+
+@utility container {
+    padding-inline: .75rem; /* 12px */
+    margin-inline: auto;
+
+    @variant sm {  padding-inline: 3.125rem; /* 50px */  }
+    @variant md {  padding-inline: 2.25rem; /* 36px */  }
+    @variant lg {  padding-inline: 2.75rem; /* 44px */  }
+    @variant xl {  padding-inline: 3.25rem; /* 52px */  }
+    @variant 2xl {  padding-inline: 3rem; /* 48px */  }
+}

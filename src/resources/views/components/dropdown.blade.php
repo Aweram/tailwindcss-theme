@@ -1,8 +1,9 @@
+@props(["coverButtonClass" => "inline-block"])
 <div class="relative"
      x-data="{ open: false }"
      @click.outside="open=false"
      @click.stop="open=false">
-    <div @click.stop="open = !open" class="inline-block">
+    <div @click.stop="open = !open" class="{{ $coverButtonClass }}">
         @isset($button)
             {{ $button }}
         @endisset

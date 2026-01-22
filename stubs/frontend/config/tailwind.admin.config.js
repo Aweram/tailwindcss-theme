@@ -10,24 +10,6 @@ export default {
         "./vendor/aweram/tailwindcss-theme/src/resources/views/**/*.blade.php",
     ],
     theme: {
-        container: {
-            center: true,
-            padding: {
-                DEFAULT: '.75rem',
-                sm: '3.125rem',
-                md: '2.25rem',
-                lg: '2.75rem',
-                xl: '3.25rem',
-                '2xl': '3rem'
-            }
-        },
-
-        screens: {
-            'xs': "480px", // => @media (min-width: 480px) {...}
-
-            ...defaultTheme.screens
-        },
-
         colors: {
             black: colors.black,
             white: colors.white,
@@ -105,20 +87,23 @@ export default {
                 "btn-ico-text": 'var(--btn-ico-text-space)',
                 "btn-x-ico": 'var(--btn-padding-x-ico)',
                 "btn-x": 'var(--btn-padding-x)',
+
                 'indent-xs': 'var(--indent-xs)',
                 'indent-sm': 'var(--indent-sm)',
                 'indent': 'var(--indent-width)',
                 'indent-lg': 'var(--indent-lg)',
                 'indent-half': 'var(--indent-half)',
                 'indent-double': 'var(--indent-double)',
+
                 'spacer': 'var(--indent-spacer)',
-                'auth-form': 'var(--auth-form)',
+                'modal-aside': 'var(--modal-aside-width)',
 
                 'menu': 'var(--menu-length)',
                 'outer-menu': "calc(100% - var(--menu-length))",
                 'nav': "calc(100% - var(--indent-width))",
                 'nav-full': "calc(100% - var(--menu-length) - var(--indent-double))",
-                'modal-aside': 'var(--modal-aside-width)',
+
+                'auth-form': 'var(--auth-form)',
             },
             zIndex: {
                 'dropdown': 'var(--z-dropdown)',

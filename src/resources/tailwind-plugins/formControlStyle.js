@@ -97,22 +97,20 @@ module.exports = plugin.withOptions(function (options = {}) {
                 }
             },
 
-            'textarea': {
-                '&.form-control': {
-                    minHeight: "var(--input-height)",
-                    paddingTop: "var(--input-textarea-padding-y)",
-                    paddingBottom: "var(--input-textarea-padding-y)",
-                },
-                '&.form-control-sm': {
-                    minHeight: "var(--input-height-sm)",
-                    paddingTop: "var(--input-textarea-padding-y-sm)",
-                    paddingBottom: "var(--input-textarea-padding-y-sm)",
-                },
-                '&.form-control-lg': {
-                    minHeight: "var(--input-height-lg)",
-                    paddingTop: "var(--input-textarea-padding-y-lg)",
-                    paddingBottom: "var(--input-textarea-padding-y-lg)",
-                }
+            'textarea.form-control': {
+                minHeight: "var(--input-height)",
+                paddingTop: "var(--input-textarea-padding-y)",
+                paddingBottom: "var(--input-textarea-padding-y)",
+            },
+            'textarea.form-control-sm': {
+                minHeight: "var(--input-height-sm)",
+                paddingTop: "var(--input-textarea-padding-y-sm)",
+                paddingBottom: "var(--input-textarea-padding-y-sm)",
+            },
+            'textarea.form-control-lg': {
+                minHeight: "var(--input-height-lg)",
+                paddingTop: "var(--input-textarea-padding-y-lg)",
+                paddingBottom: "var(--input-textarea-padding-y-lg)",
             },
 
             ".form-control-sm": {

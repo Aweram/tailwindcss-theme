@@ -141,8 +141,8 @@
     --input-file-padding-fix: 3px;
     --select-indicator-padding: calc(var(--input-padding-x) * 3);
 
-    --input-font-size: .875rem; /* 14px */
-    --input-font-size-sm: .75rem; /* 12px */
+    --input-font-size: 1rem; /* 16px */
+    --input-font-size-sm: .875rem; /* 14px */
     --input-font-size-lg: 1.125rem; /* 18px */
 
     --input-line-height: 1.25rem; /* 20px */

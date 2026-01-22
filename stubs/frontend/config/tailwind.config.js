@@ -11,24 +11,6 @@ export default {
         "./vendor/aweram/tailwindcss-theme/src/config/tailwindcss-theme.php",
     ],
     theme: {
-        container: {
-            center: true,
-            padding: {
-                DEFAULT: '.75rem', // 12px
-                sm: '3.125rem', // 50px
-                md: '2.25rem', // 36px
-                lg: '2.75rem', // 44px
-                xl: '3.25rem', //52px
-                '2xl': '3rem' // 64px
-            }
-        },
-
-        screens: {
-            'xs': "480px", // => @media (min-width: 480px) {...}
-
-            ...defaultTheme.screens
-        },
-
         colors: {
             black: colors.black,
             white: colors.white,
@@ -38,6 +20,7 @@ export default {
 
             body: 'rgba(var(--color-body), <alpha-value>)',
             "body-bg": 'rgba(var(--color-body-bg), <alpha-value>)',
+            stroke: 'rgba(var(--color-stroke), <alpha-value>)',
             // theme colors
             light: {
                 DEFAULT: 'rgba(var(--color-light), <alpha-value>)',
@@ -92,12 +75,14 @@ export default {
                 "btn-ico-text": 'var(--btn-ico-text-space)',
                 "btn-x-ico": 'var(--btn-padding-x-ico)',
                 "btn-x": 'var(--btn-padding-x)',
+
                 'indent-xs': 'var(--indent-xs)',
                 'indent-sm': 'var(--indent-sm)',
                 'indent': 'var(--indent-width)',
                 'indent-lg': 'var(--indent-lg)',
                 'indent-half': 'var(--indent-half)',
                 'indent-double': 'var(--indent-double)',
+
                 'spacer': 'var(--indent-spacer)',
                 'modal-aside': 'var(--modal-aside-width)',
             },

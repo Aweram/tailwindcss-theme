@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import laravel, { refreshPaths } from "laravel-vite-plugin";
+import laravel from "laravel-vite-plugin";
 
 export default defineConfig({
     plugins: [
@@ -8,18 +8,7 @@ export default defineConfig({
                 "resources/css/app.css", "resources/js/app.js",
                 "resources/css/admin.css", "resources/js/admin.js"
             ],
-            refresh: [
-                ...refreshPaths,
-            ]
+            refresh: true
         })
-    ],
-    css: {
-        postcss: {
-            plugins: [
-                require("tailwindcss/nesting"),
-                require("tailwindcss"),
-                require("autoprefixer"),
-            ]
-        }
-    }
+    ]
 })
